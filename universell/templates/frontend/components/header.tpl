@@ -44,7 +44,7 @@
 						<div class="pkp_site_name">
 					{/if}
 						{if $currentContext && $multipleContexts}
-							{url|assign:"homeUrl" journal="index" router=$smarty.const.ROUTE_PAGE}
+							{url|assign:"homeUrl" page="index" router=$smarty.const.ROUTE_PAGE}
 						{else}
 							{url|assign:"homeUrl" page="index" router=$smarty.const.ROUTE_PAGE}
 						{/if}
