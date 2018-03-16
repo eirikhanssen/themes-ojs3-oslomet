@@ -13,5 +13,5 @@
 
 <locale name="sv_SE" full_name="Svenska">
 	<message key="plugins.themes.OsloMetParent.name">Journals at OsloMet Parent Theme</message>
-	<message key="plugins.themes.OsloMetParent.description">Endringer her påvirker alle andre themes på plattformen utviklet av Digitale Tjenester ved OsloMet, siden de arver fra dette theme. Unntaket er OJS3 <strong>Default</strong> theme som dette themet arver fra. Det er ikke meningen at dette themet skal kunne velges direkte av noen tidsskrifter, og derfor skal det ikke aktiveres i plugin-galleriet.</message>
+	<message key="plugins.themes.OsloMetParent.description">Moder-tema. Påvirker alle tema unntatt <strong>Default</strong> som er bestemor-tema. Ikke aktiver dette i plugin-galleriet da det ikke er ment for å brukes direkte.</message>
 </locale>

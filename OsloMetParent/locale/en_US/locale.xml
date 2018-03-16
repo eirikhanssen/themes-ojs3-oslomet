@@ -13,5 +13,5 @@
 
 <locale name="en_US" full_name="U.S. English">
 	<message key="plugins.themes.OsloMetParent.name">Journals at OsloMet Parent Theme</message>
-	<message key="plugins.themes.OsloMetParent.description">Changes made here affect all journals since they inherit from this theme. The exception being the OJS3 <strong>Default</strong> theme which is this theme's parent. It is not inteded to be selected by journals and should therefore not be activated in the plugins gallery.</message>
+	<message key="plugins.themes.OsloMetParent.description">Mother Theme. Affects all themes except <strong>Default</strong> theme which is the grandmother theme. Dont't activate this in the plugin galley since it should not be used directly.</message>
 </locale>
