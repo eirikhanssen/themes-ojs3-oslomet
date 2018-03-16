@@ -1,0 +1,28 @@
+#!/bin/sh
+msg="Create a new theme in the parent folder using this stub theme as a base, while setting up correct naming.\nUsage:\nt='theme_name' j='journal_name' ./maketheme"
+if [ -z "${t}" ]; then
+  echo $msg
+  exit 1
+fi
+if [ -z "${j}" ]; then
+  echo $msg
+  exit 1
+fi
+themename=$t
+journalname=$j
+if [ -d "../$themename" ]; then
+  echo The theme «$themename» already exists! Aborting...
+  exit 1
+fi
+date=$(date +%Y-%m-%d)
+echo "Created new Theme:"
+echo "Theme Name:" $themename
+echo "Journal Name:" $journalname
+echo "Date:" $date
+mkdir ../$themename
+cp -R ./* ../$themename/
+oldthemepluginfile="../$themename/__ThemeName__ThemePlugin.inc.php"
+newthemepluginfile="../$themename/$themename""ThemePlugin.inc.php"
+mv $oldthemepluginfile $newthemepluginfile
+rm ../$themename/maketheme
+find ../$themename -type f -exec sed -i -e "s/__ThemeName__/$themename/g" -e "s/__JournalName__/$journalname/g" -e "s/__DATE__/$date/g" {} \;
