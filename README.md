@@ -1,12 +1,102 @@
 # themes-ojs3-oslomet
-Custom OJS3 themes for journals hosted by OsloMet – Oslo Metropolitan University
 
-## Theme hierarchy
-1. The base theme for hosted journals will be called **universell** theme, which will be child of, and inherit from the **default** ojs3-theme
-   - Changes made here, will be applied for *all hosted journals*
-2. Each journal will get their own theme that will be child of **universell** theme
-   - Changes made here will apply *only for that journal*
+## Custom OJS3 themes for journals hosted by OsloMet – Oslo Metropolitan University
 
 ## Useful information when developing OJS3 themes
 - [PKP Theming Guide](https://pkp.gitbooks.io/pkp-theming-guide/content/en/ "Gitbook that details development of OJS3 and OMP3 themes")
 - [Example child theme: default-child](https://github.com/NateWr/default-child "default-child source on github")
+
+## Theme hierarchy for journals hosted by OsloMet – Oslo Metropolitan University
+
+The general idea is that we will make changes to **OsloMetParent** to affect the themes of all the journals.
+Each journal will have a theme that is a child-theme of **OsloMetParent**.
+
+Individual journal's theme changes will go in their own theme.
+
+default - Standard OJS3 default theme. We won't be making any changes here. This theme will be the 'grandmother' of the themes we will be using.
+  |
+  +--  OsloMetParent 
+         |      Mother Theme. Don't activate in the plugin gallery. It is not intended to be used directly.
+         |      Changes here affect all other themes except "default" theme.
+         |      Other themes will inherit from this one, and changes made here will affect all child themes.
+         |
+         +--  __ThemeName__  Stub theme. Do not activate in plugin galley. Used as a template to create new themes fast.
+         |                   Run the shellscript **maketheme** inside the __ThemeName__ folder to create new theme. 
+         |                   Will replace text in created theme with parameters given.
+         |                     
+         +--  OsloMetJournals - OsloMet Journals Site Index Theme
+         |
+         +--  Fleks - Scandinavian Journal of Intercultural Theory and Practice
+         |
+         +--  FormAkademisk - FormAkademisk - forskningstidsskrift for design og designdidaktikk
+         |
+         +--  Human - Human Rights Education Review
+         |
+         +--  Information - InFormation - Nordic Journal of Art and Research
+         |
+         +--  NJCIE - Nordic Journal of Comparative and International Education (NJCIE)
+         |
+         +--  NJSR - Nordic Journal of Social Research
+         |
+         +--  NBF - Tidsskrift for Nordisk barnehageforskning
+         |
+         +--  PP - Professions and Professionalism
+         |
+         +--  RadOpen - Radiography Open
+         |
+         +--  RERM - Reconceptualizing Educational Research Methodology
+         |
+         +--  SJVD - Skandinavisk tidsskrift for yrker og profesjoner i utvikling
+         |
+         +--  Seminar - Seminar.net
+         |
+         +--  Techne - Techne serien - Forskning i slöjdpedagogik och slöjdvetenskap
+         |
+         +--  Arkiv - Tidsskriftet Arkiv
+         |
+         +--  Ungdomsforskning - Tidsskrift for ungdomsforskning
+
+## Creating new themes
+
+### Get instructions
+```
+user@host /var/www/ojs/plugins/themes $ cd __ThemeName__
+user@host /var/www/ojs/plugins/themes/__ThemeName__ $ ./maketheme
+```
+
+### Create a new theme:
+- Theme name: "WonderfulTheme" <-- (note that you should not use spaces here)
+- Journal name: "Wonderful Journal" <-- (spaces are allowed here)
+
+```
+user@host /var/www/ojs/plugins/themes/__ThemeName__ $ ./maketheme
+```
+
+This will output the following usage message
+
+```
+Create a new theme in the parent folder using this stub theme as a base, while setting up correct naming.
+Usage:
+t='theme_name' j='journal_name' ./maketheme
+```
+Creating your new theme:
+
+```
+user@host /var/www/ojs/plugins/themes/__ThemeName__ $ t='WonderfulTheme' j='Wonderful Journal' ./maketheme
+```
+
+This will output:
+
+```
+Created new Theme:
+Theme Name: WonderfulTheme
+Journal Name: Wonderful Journal
+Date: 2018-03-16
+```
+
+Don't worry about overwriting old themes:
+
+```
+user@host /var/www/ojs/plugins/themes/__ThemeName__ $ t='WonderfulTheme' j='Wonderful Journal' ./maketheme
+The theme «WonderfulTheme» already exists! Aborting...
+```
