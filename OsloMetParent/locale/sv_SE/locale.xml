@@ -13,5 +13,5 @@
 
 <locale name="sv_SE" full_name="Svenska">
 	<message key="plugins.themes.OsloMetParent.name">Journals at OsloMet Parent Theme</message>
-	<message key="plugins.themes.OsloMetParent.description">Moder-tema. Påvirker alle tema unntatt <strong>Default</strong> som er bestemor-tema. Ikke aktiver dette i plugin-galleriet da det ikke er ment for å brukes direkte.</message>
+	<message key="plugins.themes.OsloMetParent.description">Moder-tema. Påvirker alle tema unntatt "Default" som er bestemor-tema. Ikke aktiver dette i plugin-galleriet da det ikke er ment for å brukes direkte.</message>
 </locale>
