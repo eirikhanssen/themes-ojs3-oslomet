@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/themes/OsloMetParent/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization information: https://pkp.sfu.ca/wiki/index.php?title=Translating_OxS
+  * Localization strings.
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.themes.OsloMetParent.name">Journals at OsloMet Parent Theme</message>
+	<message key="plugins.themes.OsloMetParent.description">Changes made here affect all journals since they inherit from this theme. The exception being the OJS3 <strong>Default</strong> theme which is this theme's parent. It is not inteded to be selected by journals and should therefore not be activated in the plugins gallery.</message>
+</locale>

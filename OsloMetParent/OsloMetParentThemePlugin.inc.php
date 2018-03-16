@@ -1,21 +1,21 @@
 <?php
 
 /**
- * @file plugins/themes/universell/UniversellThemePlugin.inc.php
+ * @file plugins/themes/OsloMetParent/OsloMetParentThemePlugin.inc.php
  *
  * Copyright (c) 2014-2017 Simon Fraser University
  * Copyright (c) 2003-2017 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class UniversellThemePlugin
- * @ingroup plugins_themes_universell
+ * @class OsloMetParentThemePlugin
+ * @ingroup plugins_themes_OsloMetParent
  *
- * @brief Universell theme
+ * @brief OsloMetParent theme
  */
 
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class UniversellThemePlugin extends ThemePlugin {
+class OsloMetParentThemePlugin extends ThemePlugin {
 
     /**
      * Load the custom styles for our theme
@@ -38,7 +38,7 @@ class UniversellThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __('plugins.themes.universell.name');
+		return __('plugins.themes.OsloMetParent.name');
 	}
 
 	/**
@@ -46,6 +46,6 @@ class UniversellThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __('plugins.themes.universell.description');
+		return __('plugins.themes.OsloMetParent.description');
 	}
 }
