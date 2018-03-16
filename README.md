@@ -24,7 +24,7 @@ default - Standard OJS3 default theme. We won't be making any changes here. This
          |                   Run the shellscript **maketheme** inside the __ThemeName__ folder to create new theme. 
          |                   Will replace text in created theme with parameters given.
          |                     
-         +--  OsloMetJournals - OsloMet Journals Site Index Theme
+         +--  OsloMetJournalsIndex - OsloMet Journals Site Index
          |
          +--  Fleks - Scandinavian Journal of Intercultural Theory and Practice
          |
