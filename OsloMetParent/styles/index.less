@@ -1,2 +1,37 @@
 // can override variables here, as well as rules
-@bg: yellow;
+
+.page_issue_archive .issues_archive > li {border:none;}
+
+.obj_galley_link {font-weight:bold;}
+
+.columns {
+display:flex; 
+flex-flow: row wrap; 
+justify-content: center; 
+align-items: stretch; 
+align-content: flex-start;}
+
+img.hioaFooterLogo {
+float:left;
+margin: 0;
+margin-right: .5em;
+}
+
+img.hioaFooterLogo + span {}
+footer .column {
+flex-grow:1;
+}
+
+footer h4 {
+margin: .5em;
+}
+
+footer .column + .column {margin-left: 1em;}
+footer .column {text-align: left;}
+
+footer h4 + p {
+margin-top: .5em;
+}
+footer p {
+margin-left: .5em;
+}
