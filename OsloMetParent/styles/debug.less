@@ -66,7 +66,7 @@
     transform: translate(0, -50%);
     background: #ddd;
     padding: .25em;
-    opacity: .06;
+    opacity: .2;
     z-index: 100;
 }
 
@@ -75,16 +75,40 @@
 }
 
 .gui-debug-buttons button {
-	padding: .7em .5em;
+    padding: .7em .5em;
     margin: .25em;
     width: 10em;
     display: block;
     border: 2px solid #333;
     border-radius: .25em;
-}
+    margin-right: 2.5em;
+    position: relative;
+    background: #ddd;
+}	
 
 .gui-debug-buttons button:hover {
-    background: #333;
+    background: #444;
     color: white;
     border: 2px solid white;
+}
+
+.gui-debug-buttons button::after {
+	content:"";
+	width: 2em;
+	height: 2em;
+	position:absolute;
+	right: -2.5em;
+	top:50%;
+	transform:translate(0,-50%);
+	border: 1px solid #444;
+	color: black;
+	display:flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	background-color: white;
+}
+
+.gui-debug-buttons button.checked::after {
+	content:"✔";
+	color: green;
 }

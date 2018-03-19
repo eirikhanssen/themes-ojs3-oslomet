@@ -57,8 +57,8 @@
 
 		<!-- add some debug/demo buttons (will be removed later) -->
 		<div class="gui-debug-buttons">
-			<button onclick="$('body').toggleClass('borderless')">borders</button>
-			<button onclick="$('body').toggleClass('breadcrumb-debug')">breadcrumbs</button>
+			<button id="breadcrumbs-btn" onclick="(function(){$('#breadcrumbs-btn').toggleClass('checked'); $('body').toggleClass('breadcrumb-debug');})();">breadcrumbs-mod</button>
+			<button id="no-borders-btn" onclick="(function(){$('#no-borders-btn').toggleClass('checked'); $('body').toggleClass('borderless');})();">no-borders</button>		
 		</div>
 
 	</footer>
