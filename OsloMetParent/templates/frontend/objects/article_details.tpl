@@ -356,10 +356,25 @@
 				{/if}
 			{/foreach}
 
-			{* Licensing info *}
-			{if $copyright || $licenseUrl}
-			<!-- removed copyright notice from this page! --> 
-			{/if}
+ 			{* Licensing info *}
+ 			{if $copyright || $licenseUrl}
+				<div class="item copyright">
+					{if $licenseUrl}
+						{if $ccLicenseBadge}
+							{$ccLicenseBadge}
+						{else}
+							<a href="{$licenseUrl|escape}" class="copyright">
+								{if $copyrightHolder}
+									{translate key="submission.copyrightStatement" copyrightHolder=$copyrightHolder copyrightYear=$copyrightYear}
+								{else}
+									{translate key="submission.license"}
+								{/if}
+							</a>
+						{/if}
+					{/if}
+					<!-- removed $copyright -->
+				</div>
+ 			{/if}
 
 			{call_hook name="Templates::Article::Details"}
 
