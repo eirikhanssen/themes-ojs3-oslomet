@@ -62,9 +62,10 @@
 
 		<!-- add some debug/demo buttons (will be removed later) -->
 		<div class="gui-debug-buttons">
-    		<button onclick="$('body').toggleClass('borderless')">borders</button>
+			<button onclick="$('body').toggleClass('borderless')">borders</button>
+			<button onclick="$('body').toggleClass('breadcrumb-debug')">breadcrumbs</button>
 		</div>
-		
+
 	</footer>
 
 </div><!-- pkp_structure_footer_wrapper -->

@@ -12,6 +12,51 @@
     .pkp_structure_main:after {
 	    visibility: hidden;
     }
+    
+}
+
+.breadcrumb-debug {
+    .pkp_structure_sidebar > .pkp_block {
+        padding-top: 0;
+    }
+    
+    .cmp_breadcrumbs {
+        background: #eee;
+        width:100%;
+        position:relative;
+        z-index:1;
+    }
+    
+    .cmp_breadcrumbs::before {
+        position:absolute;
+        content:"";
+        background: #eee;
+        top:0;
+        bottom:0;
+        width: 9999px;
+        right: 100%;
+        z-index: -10;
+        box-shadow: 9999px 0 0 #eee;
+    }
+    
+    .cmp_breadcrumbs ol {
+        margin-bottom:0;
+    }
+    
+    .cmp_breadcrumbs .current h1 {
+        color: #444;
+    }
+    
+    .pkp_structure_content {
+        padding-top:0;
+        
+    }
+    
+    .pkp_structure_sidebar > .pkp_block {
+        padding-top: .5em;
+        position:relative;
+        z-index:10;
+    }
 }
 
 .gui-debug-buttons {
