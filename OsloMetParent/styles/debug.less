@@ -1,67 +1,14 @@
-// testing no-borders layout
-.no-borders {
-    .obj_article_details .entry_details,
-    .obj_article_details .main_entry,
-    .obj_article_details .entry_details .item,
-    .obj_article_details .row,
-    .page_issue_archive .issues_archive {
-	    border:none;
-    }
-    .pkp_structure_main:before,
-    .pkp_structure_main:after {
-	    visibility: hidden;
-    }
-    
-}
+/**
+ * @file styles/debug.less
+ *
+ * Copyright (c) 2018 OsloMet - Oslo Metropolitan University
+ * Copyright (c) 2018 - Eirik Hanssen
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Reusable components
+ */
 
-// testing alternative breadcrumbs
-.breadcrumbs-bg {
-
-    .pkp_structure_sidebar > .pkp_block {
-        padding-top: 0;
-    }
-    
-    .cmp_breadcrumbs {
-        background: #eee;
-        width:100%;
-        position:relative;
-        z-index:1;
-        margin-bottom:2em;
-    }
-    
-    .cmp_breadcrumbs::before {
-        position:absolute;
-        content:"";
-        background: #eee;
-        top:0;
-        bottom:0;
-        width: 9999px;
-        right: 100%;
-        z-index: -10;
-        box-shadow: 9999px 0 0 #eee;
-    }
-    
-    .cmp_breadcrumbs ol {
-        margin-bottom:0;
-    }
-    
-    .cmp_breadcrumbs .current h1 {
-        color: #444;
-    }
-    
-    .pkp_structure_content {
-        padding-top:0;
-        
-    }
-    
-    .pkp_structure_sidebar > .pkp_block {
-        padding-top: .5em;
-        position:relative;
-        z-index:10;
-    }
-}
-
-// testing toggle buttons
+ // testing toggle buttons
 .gui-debug-buttons {
     position: fixed;
     right: 0;
