@@ -56,10 +56,11 @@
 		</div><!-- columns -->
 
 		<!-- add some debug/demo buttons (will be removed later) -->
-		<div class="gui-debug-buttons">
+		<fieldset class="gui-debug-buttons">
+			<legend>Experimental styles</legend>
 			<button id="breadcrumbs-btn" onclick="(function(){ldelim}$('#breadcrumbs-btn').toggleClass('checked'); $('body').toggleClass('breadcrumbs-bg');{rdelim})();">breadcrumbs-bg</button>
 			<button id="no-borders-btn" onclick="(function(){ldelim}$('#no-borders-btn').toggleClass('checked'); $('body').toggleClass('no-borders');{rdelim})();">no-borders</button>		
-		</div>
+		</fieldset>
 
 	</footer>
 
