@@ -372,6 +372,7 @@
 							</a>
 						{/if}
 					{/if}
+					{*$copyright*}
 					<!-- removed $copyright -->
 				</div>
  			{/if}
