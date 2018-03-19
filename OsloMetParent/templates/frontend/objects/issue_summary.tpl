@@ -36,7 +36,8 @@
 		</div>
 	{/if}
 
-	<div class="description">
+	<!-- removed LocalizedDescription from this page -->
+	{*<div class="description">
 		{$issue->getLocalizedDescription()|strip_unsafe_html}
-	</div>
+	</div>*}
 </div><!-- .obj_issue_summary -->
