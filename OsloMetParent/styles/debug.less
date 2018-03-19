@@ -1,0 +1,33 @@
+// testing something (demo)
+
+.borderless {
+    .obj_article_details .entry_details,
+    .obj_article_details .main_entry,
+    .obj_article_details .entry_details .item,
+    .obj_article_details .row {
+	    border:none;
+    }
+    .pkp_structure_main:before,
+    .pkp_structure_main:after {
+	    visibility: hidden;
+    }
+}
+
+.gui-debug-buttons {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: #ddd;
+    padding: .25em;
+    opacity: .06;
+}
+
+.gui-debug-buttons:hover {
+	opacity: 1;
+}
+
+.gui-debug-buttons button {
+	padding: .7em .5em;
+	margin: .25em;
+}

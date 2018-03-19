@@ -60,6 +60,11 @@
 		{/if}
         </div><!-- columns -->
 
+		<!-- add some debug/demo buttons (will be removed later) -->
+		<div class="gui-debug-buttons">
+    		<button onclick="$('body').toggleClass('borderless')">borders</button>
+		</div>
+		
 	</footer>
 
 </div><!-- pkp_structure_footer_wrapper -->
