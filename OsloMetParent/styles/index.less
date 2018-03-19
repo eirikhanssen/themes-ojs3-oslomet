@@ -1,5 +1,5 @@
 // can override variables here, as well as rules
-
+@import "footer.less";
 .page_issue_archive .issues_archive > li {border:none;}
 
 .obj_galley_link {font-weight:bold;}
@@ -11,32 +11,6 @@ justify-content: center;
 align-items: stretch; 
 align-content: flex-start;}
 
-img.hioaFooterLogo {
-float:left;
-margin: 0;
-margin-right: .5em;
-}
-
-img.hioaFooterLogo + span {}
-
-footer .column {
-flex-grow:1;
-}
-
-footer h4 {
-margin: .5em;
-}
-
-footer .column + .column {margin-left: 1em;}
-footer .column {text-align: left;}
-
-footer h4 + p {
-margin-top: .5em;
-}
-footer p {
-margin-left: .5em;
-}
-
 // Issue cover
 
 @media (min-width: 768px) {
@@ -44,7 +18,6 @@ margin-left: .5em;
         width: calc(50% - 2em);
     }
 }
-
 
 .pkp_structure_main .obj_issue_toc .sections {
 	margin-top:0;
@@ -67,9 +40,3 @@ margin-left: .5em;
 	top: -1px;
 }
 
-// footer
-
-.pkp_structure_footer_wrapper {
-    background: white;
-    border-top: 2px solid @bg-shade;
-}
