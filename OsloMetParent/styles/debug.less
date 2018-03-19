@@ -1,6 +1,5 @@
-// testing something (demo)
-
-.borderless {
+// testing no-borders layout
+.no-borders {
     .obj_article_details .entry_details,
     .obj_article_details .main_entry,
     .obj_article_details .entry_details .item,
@@ -15,7 +14,9 @@
     
 }
 
-.breadcrumb-debug {
+// testing alternative breadcrumbs
+.breadcrumbs-bg {
+
     .pkp_structure_sidebar > .pkp_block {
         padding-top: 0;
     }
@@ -59,56 +60,56 @@
     }
 }
 
+// testing toggle buttons
 .gui-debug-buttons {
     position: fixed;
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
-    background: #ddd;
+    background: #ccc;
     padding: .25em;
     opacity: .2;
     z-index: 100;
-}
 
-.gui-debug-buttons:hover {
-	opacity: 1;
-}
+    :hover {
+        opacity: 1;
+    }
 
-.gui-debug-buttons button {
-    padding: .7em .5em;
-    margin: .25em;
-    width: 10em;
-    display: block;
-    border: 2px solid #333;
-    border-radius: .25em;
-    margin-right: 2.5em;
-    position: relative;
-    background: #ddd;
-}	
+    button {
+        padding: .7em .5em;
+        margin: .25em;
+        width: 10em;
+        display: block;
+        border: 2px solid #333;
+        border-radius: .25em;
+        margin-right: 2.5em;
+        position: relative;
+        background: #eee;
 
-.gui-debug-buttons button:hover {
-    background: #444;
-    color: white;
-    border: 2px solid white;
-}
+        :hover {
+            background: #444;
+            color: white;
+            border: 2px solid white;
+        }
 
-.gui-debug-buttons button::after {
-	content:"";
-	width: 2em;
-	height: 2em;
-	position:absolute;
-	right: -2.5em;
-	top:50%;
-	transform:translate(0,-50%);
-	border: 1px solid #444;
-	color: black;
-	display:flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	background-color: white;
-}
-
-.gui-debug-buttons button.checked::after {
-	content:"✔";
-	color: green;
+        ::after {
+            content:"";
+            width: 2em;
+            height: 2em;
+            position:absolute;
+            right: -2.5em;
+            top:50%;
+            transform:translate(0,-50%);
+            border: 1px solid #444;
+            color: black;
+            display:flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            background-color: white;
+        }
+        .checked::after {
+            content:"✔";
+            color: green;
+        }
+    }
 }
