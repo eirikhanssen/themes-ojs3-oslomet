@@ -1,0 +1,37 @@
+/**
+ * @file styles/OsloMetParent/issue_toc.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to an issue table of contents view
+ * @link templates/frontend/objects/issue_toc.tpl
+ */
+
+ @media (min-width: 768px) {
+    .obj_issue_toc .cover {
+        width: calc(50% - 2em);
+    }
+}
+
+.pkp_structure_main .obj_issue_toc .sections {
+	margin-top:0;
+}		
+
+.pkp_structure_main .obj_issue_toc .section {
+
+	padding-top: 0;
+	padding-bottom:1em;
+}
+
+.obj_issue_toc .galleys h2, .obj_issue_toc .section h2 {
+	font-weight:bold;
+	color: black;
+	margin-top: 1em;
+	margin-bottom:.5em;
+}
+
+.obj_issue_toc .galleys:before, .obj_issue_toc .section:before {
+	top: -1px;
+}

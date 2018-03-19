@@ -1,8 +1,8 @@
 // can override variables here, as well as rules
+@import "pages/issueArchive.less";
+@import "objects/galley_link.less";
+@import "objects/issue_toc.less";
 @import "footer.less";
-.page_issue_archive .issues_archive > li {border:none;}
-
-.obj_galley_link {font-weight:bold;}
 
 .columns {
 display:flex; 
@@ -11,32 +11,9 @@ justify-content: center;
 align-items: stretch; 
 align-content: flex-start;}
 
-// Issue cover
-
-@media (min-width: 768px) {
-    .obj_issue_toc .cover {
-        width: calc(50% - 2em);
-    }
+.column {
+    flex-grow: 1;
 }
 
-.pkp_structure_main .obj_issue_toc .sections {
-	margin-top:0;
-}		
 
-.pkp_structure_main .obj_issue_toc .section {
-
-	padding-top: 0;
-	padding-bottom:1em;
-}
-
-.obj_issue_toc .galleys h2, .obj_issue_toc .section h2 {
-	font-weight:bold;
-	color: black;
-	margin-top: 1em;
-	margin-bottom:.5em;
-}
-
-.obj_issue_toc .galleys:before, .obj_issue_toc .section:before {
-	top: -1px;
-}
 
