@@ -71,7 +71,7 @@
     opacity: .2;
     z-index: 100;
 
-    :hover {
+    &:hover {
         opacity: 1;
     }
 
@@ -86,13 +86,13 @@
         position: relative;
         background: #eee;
 
-        :hover {
+        &:hover {
             background: #444;
             color: white;
             border: 2px solid white;
         }
 
-        ::after {
+        &::after {
             content:"";
             width: 2em;
             height: 2em;
@@ -107,7 +107,8 @@
             justify-content: center;
             background-color: white;
         }
-        .checked::after {
+
+        &.checked::after {
             content:"✔";
             color: green;
         }
