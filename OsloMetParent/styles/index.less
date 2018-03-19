@@ -18,6 +18,7 @@ margin-right: .5em;
 }
 
 img.hioaFooterLogo + span {}
+
 footer .column {
 flex-grow:1;
 }
@@ -34,4 +35,41 @@ margin-top: .5em;
 }
 footer p {
 margin-left: .5em;
+}
+
+// Issue cover
+
+@media (min-width: 768px) {
+    .obj_issue_toc .cover {
+        width: calc(50% - 2em);
+    }
+}
+
+
+.pkp_structure_main .obj_issue_toc .sections {
+	margin-top:0;
+}		
+
+.pkp_structure_main .obj_issue_toc .section {
+
+	padding-top: 0;
+	padding-bottom:1em;
+}
+
+.obj_issue_toc .galleys h2, .obj_issue_toc .section h2 {
+	font-weight:bold;
+	color: black;
+	margin-top: 1em;
+	margin-bottom:.5em;
+}
+
+.obj_issue_toc .galleys:before, .obj_issue_toc .section:before {
+	top: -1px;
+}
+
+// footer
+
+.pkp_structure_footer_wrapper {
+    background: white;
+    border-top: 2px solid @bg-shade;
 }
