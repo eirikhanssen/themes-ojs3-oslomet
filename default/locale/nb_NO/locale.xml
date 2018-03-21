@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale/nb_NO/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings.
+  -->
+
+<locale name="nb_NO" full_name="Norsk">
+	<message key="plugins.themes.default.name">Default - OJS3x Standard layout/stilsett</message>
+	<message key="plugins.themes.default.option.typography.notoSerif">Noto Serif: En serif-variant af Google's digital-native font.</message>
+	<message key="plugins.themes.default.option.typography.label">Typografi</message>
+	<message key="plugins.themes.default.option.typography.notoSans">Noto Sans: En digital-native font designet av Google til bruk med omfattende språkstøtte</message>
+	<message key="plugins.themes.default.option.typography.notoSerif_notoSans">Noto Serif/Noto Sans: En komplementær blanding av serif i overskrifter og sans-serif i brødtekst</message>
+	<message key="plugins.themes.default.option.typography.notoSans_notoSerif">Noto Sans/Noto Serif: En komplementær blanding av sans-serif i overskrifter og serif i brødtekst.</message>
+	<message key="plugins.themes.default.option.typography.lato">Lato: En populær moderne sans-serif font.</message>
+	<message key="plugins.themes.default.option.typography.lora">Lora: En bred serif font velegnet til online-lesning.</message>
+	<message key="plugins.themes.default.option.typography.lora_openSans">Lora/Open Sans: En komplementær blanding af serif i overskrifter og sans-serif i brødtekst.</message>
+	<message key="plugins.themes.default.option.colour.label">Farge</message>
+	<message key="plugins.themes.default.option.colour.description">Velg en farge til sidens header.</message>
+	<message key="plugins.themes.default.option.typography.description">Velg en font, som passer til dette tidsskriftet.</message>
+	<message key="plugins.themes.default.description">Dette theme implementerer standard layout og stilsett.</message>
+</locale>
