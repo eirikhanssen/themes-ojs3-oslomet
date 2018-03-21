@@ -8,34 +8,31 @@
  * @brief Classes for the page footer elements
  */
 
-img.hioaFooterLogo {
-    float: left;
-    margin: 0;
-    margin-right: .5em;
-}
-
-footer h4 {
-    margin: .5em;
-}
-
-footer .column {
-    margin: 1.5em 1rem;
-}
-
-.pkp_structure_footer {
-    text-align: left;
-}
-
-footer h4+p {
-    margin-top: .5em;
-}
-
-footer p {
-    margin-left: .5em;
-}
-
 .pkp_structure_footer_wrapper {
     background: @bg;
     border-top: 2px solid @bg-shade;
 }
-    
+
+.pkp_structure_footer {
+    text-align: left;
+    h4 {
+        margin: .5rem;
+    }
+    .columns {
+        margin: .75rem 0;
+        .column {
+            margin: .25rem 1rem;
+        }
+    }
+    p {
+        margin-left: .5rem;
+    }
+    h4 + p {
+        margin-top: .5rem;
+    }
+    #hostedByOsloMetLSB img {
+        float: left;
+        margin: 0;
+        margin-right: 1rem;
+    }
+}    
