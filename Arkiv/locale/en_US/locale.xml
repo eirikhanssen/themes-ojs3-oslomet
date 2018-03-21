@@ -12,6 +12,6 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.Arkiv.name">Arkiv Theme</message>
+	<message key="plugins.themes.Arkiv.name">Tidsskriftet Arkiv Theme</message>
 	<message key="plugins.themes.Arkiv.description">This theme implements the custom look and feel for the journal: Tidsskriftet Arkiv.</message>
 </locale>

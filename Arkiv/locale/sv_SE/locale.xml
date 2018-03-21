@@ -12,6 +12,6 @@
   -->
 
 <locale name="sv_SE" full_name="Svenska">
-	<message key="plugins.themes.Arkiv.name">Arkiv Theme</message>
+	<message key="plugins.themes.Arkiv.name">Tidsskriftet Arkiv Theme</message>
 	<message key="plugins.themes.Arkiv.description">Det här temat applicerar det visuella uttrycket för tidsskriftet Tidsskriftet Arkiv.</message>
 </locale>

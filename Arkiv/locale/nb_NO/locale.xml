@@ -12,6 +12,6 @@
   -->
 
 <locale name="nb_NO" full_name="Norwegian bokmål">
-	<message key="plugins.themes.Arkiv.name">Arkiv Theme</message>
+	<message key="plugins.themes.Arkiv.name">Tidsskriftet Arkiv Theme</message>
 	<message key="plugins.themes.Arkiv.description">Dette theme implementerer det visuelle uttrykket for tidsskriftet: Tidsskriftet Arkiv.</message>
 </locale>
