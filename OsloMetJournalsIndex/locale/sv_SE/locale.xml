@@ -12,6 +12,6 @@
   -->
 
 <locale name="sv_SE" full_name="Svenska">
-	<message key="plugins.themes.OsloMetJournalsIndex.name">OsloMetJournalsIndex Theme</message>
+	<message key="plugins.themes.OsloMetJournalsIndex.name">OsloMet Journals Index Theme</message>
 	<message key="plugins.themes.OsloMetJournalsIndex.description">Det här temat applicerar det visuella uttrycket för tidsskriftet OsloMet Journals Site Index.</message>
 </locale>

@@ -12,6 +12,6 @@
   -->
 
 <locale name="nb_NO" full_name="Norwegian bokmål">
-	<message key="plugins.themes.OsloMetJournalsIndex.name">OsloMetJournalsIndex Theme</message>
+	<message key="plugins.themes.OsloMetJournalsIndex.name">OsloMet Journals Index Theme</message>
 	<message key="plugins.themes.OsloMetJournalsIndex.description">Dette theme implementerer det visuelle uttrykket for tidsskriftet: OsloMet Journals Site Index.</message>
 </locale>

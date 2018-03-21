@@ -12,6 +12,6 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.OsloMetJournalsIndex.name">OsloMetJournalsIndex Theme</message>
+	<message key="plugins.themes.OsloMetJournalsIndex.name">OsloMet Journals Index Theme</message>
 	<message key="plugins.themes.OsloMetJournalsIndex.description">This theme implements the custom look and feel for the journal: OsloMet Journals Site Index.</message>
 </locale>
