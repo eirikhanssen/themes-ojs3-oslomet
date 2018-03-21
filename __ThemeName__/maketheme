@@ -1,5 +1,5 @@
 #!/bin/sh
-msg="Create a new theme in the parent folder using this stub theme as a base, while setting up correct naming.\nUsage:\nt='theme_name' j='journal_name' ./maketheme"
+msg="Create a new theme in the parent folder using this stub theme as a base, while setting up correct naming.\nUsage:\nt='theme_name' j='journal_name' ./maketheme\n\nEmpty template:\nt='' j='' ./maketheme"
 if [ -z "${t}" ]; then
   echo $msg
   exit 1
