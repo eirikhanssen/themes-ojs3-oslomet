@@ -12,6 +12,6 @@
   -->
 
 <locale name="nb_NO" full_name="Norwegian bokmål">
-	<message key="plugins.themes.PP.name">PP Theme</message>
+	<message key="plugins.themes.PP.name">Professions and Professionalism Theme</message>
 	<message key="plugins.themes.PP.description">Dette theme implementerer det visuelle uttrykket for tidsskriftet: Professions and Professionalism.</message>
 </locale>

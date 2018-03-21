@@ -12,6 +12,6 @@
   -->
 
 <locale name="sv_SE" full_name="Svenska">
-	<message key="plugins.themes.Human.name">Human Theme</message>
+	<message key="plugins.themes.Human.name">Human Rights Education Review Theme</message>
 	<message key="plugins.themes.Human.description">Det här temat applicerar det visuella uttrycket för tidsskriftet Human Rights Education Review.</message>
 </locale>

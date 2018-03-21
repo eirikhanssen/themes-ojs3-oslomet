@@ -12,6 +12,6 @@
   -->
 
 <locale name="sv_SE" full_name="Svenska">
-	<message key="plugins.themes.PP.name">PP Theme</message>
+	<message key="plugins.themes.PP.name">Professions and Professionalism Theme</message>
 	<message key="plugins.themes.PP.description">Det här temat applicerar det visuella uttrycket för tidsskriftet Professions and Professionalism.</message>
 </locale>

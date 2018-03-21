@@ -12,6 +12,6 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.NBF.name">NBF Theme</message>
-	<message key="plugins.themes.NBF.description">This theme implements the custom look and feel for the journal: Tidsskrift for Nordisk barnehageforskning.</message>
+	<message key="plugins.themes.NBF.name">Nordisk BarnehageForskning Theme</message>
+	<message key="plugins.themes.NBF.description">This theme implements the custom look and feel for the journal: Nordic Early Childhood Education Research</message>
 </locale>

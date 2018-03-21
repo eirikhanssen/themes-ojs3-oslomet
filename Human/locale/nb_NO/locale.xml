@@ -12,6 +12,6 @@
   -->
 
 <locale name="nb_NO" full_name="Norwegian bokmål">
-	<message key="plugins.themes.Human.name">Human Theme</message>
+	<message key="plugins.themes.Human.name">Human Rights Education Review Theme</message>
 	<message key="plugins.themes.Human.description">Dette theme implementerer det visuelle uttrykket for tidsskriftet: Human Rights Education Review.</message>
 </locale>

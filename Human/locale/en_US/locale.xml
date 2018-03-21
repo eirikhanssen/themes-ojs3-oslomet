@@ -12,6 +12,6 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.Human.name">Human Theme</message>
+	<message key="plugins.themes.Human.name">Human Rights Education Review Theme</message>
 	<message key="plugins.themes.Human.description">This theme implements the custom look and feel for the journal: Human Rights Education Review.</message>
 </locale>

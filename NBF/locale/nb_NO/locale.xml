@@ -12,6 +12,6 @@
   -->
 
 <locale name="nb_NO" full_name="Norwegian bokmål">
-	<message key="plugins.themes.NBF.name">NBF Theme</message>
+	<message key="plugins.themes.NBF.name">Nordisk Barnehageforskning Theme</message>
 	<message key="plugins.themes.NBF.description">Dette theme implementerer det visuelle uttrykket for tidsskriftet: Tidsskrift for Nordisk barnehageforskning.</message>
 </locale>
