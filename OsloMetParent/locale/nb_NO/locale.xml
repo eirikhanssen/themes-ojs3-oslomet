@@ -12,6 +12,6 @@
   -->
 
 <locale name="nb_NO" full_name="Norwegian bokmål">
-	<message key="plugins.themes.OsloMetParent.name">Journals at OsloMet Parent Theme</message>
+	<message key="plugins.themes.OsloMetParent.name">OsloMet Journals Parent Theme</message>
 	<message key="plugins.themes.OsloMetParent.description">Moder-tema. Påvirker alle tema unntatt "Default" som er bestemor-tema. Ikke aktiver dette i plugin-galleriet da det ikke er ment for å brukes direkte.</message>
 </locale>

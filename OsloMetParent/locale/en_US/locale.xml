@@ -12,6 +12,6 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.OsloMetParent.name">Journals at OsloMet Parent Theme</message>
+	<message key="plugins.themes.OsloMetParent.name">OsloMet Journals Parent Theme</message>
 	<message key="plugins.themes.OsloMetParent.description">Mother Theme. Affects all themes except "Default" theme which is the grandmother theme. Dont't activate this in the plugin galley since it should not be used directly.</message>
 </locale>
