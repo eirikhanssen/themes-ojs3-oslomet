@@ -12,6 +12,6 @@
   -->
 
 <locale name="nb_NO" full_name="Norwegian bokmål">
-	<message key="plugins.themes.RadOpen.name">RadOpen Theme</message>
+	<message key="plugins.themes.RadOpen.name">Radiography Open Theme</message>
 	<message key="plugins.themes.RadOpen.description">Dette theme implementerer det visuelle uttrykket for tidsskriftet: Radiography Open.</message>
 </locale>

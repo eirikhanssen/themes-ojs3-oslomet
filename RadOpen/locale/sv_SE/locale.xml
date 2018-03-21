@@ -12,6 +12,6 @@
   -->
 
 <locale name="sv_SE" full_name="Svenska">
-	<message key="plugins.themes.RadOpen.name">RadOpen Theme</message>
+	<message key="plugins.themes.RadOpen.name">Radiography Open Theme</message>
 	<message key="plugins.themes.RadOpen.description">Det här temat applicerar det visuella uttrycket för tidsskriftet Radiography Open.</message>
 </locale>

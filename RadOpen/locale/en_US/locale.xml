@@ -12,6 +12,6 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.RadOpen.name">RadOpen Theme</message>
+	<message key="plugins.themes.RadOpen.name">Radiography Open Theme</message>
 	<message key="plugins.themes.RadOpen.description">This theme implements the custom look and feel for the journal: Radiography Open.</message>
 </locale>
