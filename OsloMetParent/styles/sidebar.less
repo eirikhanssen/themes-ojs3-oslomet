@@ -12,35 +12,36 @@
     padding-top: 0;
     line-height: 1em;
 }
-.pkp_block {
-    .block_language {
 
-        [class*="locale"] {
-            position: relative;
-            padding-left: 2em;
-            background-position: 0 center;
-            background-repeat: no-repeat;
-            background-size: 1.5em auto;        
-        }
 
-        .locale_en_US {
-            background-image: url(/plugins/themes/OsloMetParent/svg/Flag_of_Britain.svg);
-            
-        }
-        .locale_nb_NO {
-            background-image: url(/plugins/themes/OsloMetParent/svg/Flag_of_Norway.svg);
-            
-        }
-        .locale_sv_SE {
-            background-image: url(/plugins/themes/OsloMetParent/svg/Flag_of_Sweden.svg);
-            
-        }
+.pkp_block.block_language {
 
-        .current {
-            &::after {
-                content:"✓";
-                color: @text;
-            }
+    [class*="locale"] {
+        position: relative;
+        padding-left: 2em;
+        background-position: 0 center;
+        background-repeat: no-repeat;
+        background-size: 1.5em auto;        
+    }
+
+    .locale_en_US {
+        background-image: url(/plugins/themes/OsloMetParent/svg/Flag_of_Britain.svg);
+        
+    }
+    .locale_nb_NO {
+        background-image: url(/plugins/themes/OsloMetParent/svg/Flag_of_Norway.svg);
+        
+    }
+    .locale_sv_SE {
+        background-image: url(/plugins/themes/OsloMetParent/svg/Flag_of_Sweden.svg);
+        
+    }
+
+    .current {
+        &::after {
+            content:"✓";
+            color: @text;
         }
     }
 }
+
