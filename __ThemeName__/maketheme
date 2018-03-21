@@ -26,3 +26,4 @@ newthemepluginfile="../$themename/$themename""ThemePlugin.inc.php"
 mv $oldthemepluginfile $newthemepluginfile
 rm ../$themename/maketheme
 find ../$themename -type f -exec sed -i -e "s/__ThemeName__/$themename/g" -e "s/__JournalName__/$journalname/g" -e "s/__DATE__/$date/g" {} \;
+find ../$themename/settings.xml -type f -exec sed -i "s/<value>false/<value>true/g" {} \;
