@@ -13,7 +13,7 @@
 <version>
 	<application>PP</application>
 	<type>plugins.themes</type>
-	<release>1.0.0.0</release>
+	<release>1.1.1.1</release>
 	<date>2018-03-16</date>
 	<lazy-load>0</lazy-load>
 	<class>PPThemePlugin</class>
