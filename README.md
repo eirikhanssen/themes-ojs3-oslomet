@@ -56,6 +56,11 @@ default - Standard OJS3 default theme. We won't be making any changes here. This
          |
          +--  Ungdomsforskning - Tidsskrift for ungdomsforskning
 
+## Theme versioning conventions
+version.xml has a &lt;release>3.1.0.0&lt;/release> entry. 
+The versioning convention we will use is that the three first digits: 3.1.0 here will correspond to the version of OJS this theme was designed for.
+The fourth digit will correspond to times this theme has been modified.
+
 ## Creating new themes
 
 ### Get instructions

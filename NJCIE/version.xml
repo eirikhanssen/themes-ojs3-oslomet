@@ -13,7 +13,7 @@
 <version>
 	<application>NJCIE</application>
 	<type>plugins.themes</type>
-	<release>1.1.1.1</release>
+	<release>3.1.0.0</release>
 	<date>2018-03-16</date>
 	<lazy-load>0</lazy-load>
 	<class>NJCIEThemePlugin</class>
