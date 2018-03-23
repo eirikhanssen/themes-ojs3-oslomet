@@ -17,6 +17,11 @@ body {
         position:relative;
         z-index:1;
         margin-bottom:2em;
+
+        @media screen and (min-width: @screen-desktop) {
+            width: calc(100% + @sidebar-width);
+        }
+
     }
     
     .cmp_breadcrumbs::before {
