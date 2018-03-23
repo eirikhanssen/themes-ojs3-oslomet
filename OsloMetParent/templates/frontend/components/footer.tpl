@@ -35,7 +35,7 @@
 					<p>
 						<a id="hostedByOsloMetLSB" href="http://www.hioa.no/LSB">
 							<img class="hioaFooterLogo" src="https://journals.hioa.no/public/site/images/hioalogo-bars-black-on-transparent-bg-80x45.png" alt="">
-							<span><strong>OsloMet – storbyuniversitetet</strong><br>Læringssenter og bibliotek</span>
+							<span><strong>Universitetsbiblioteket&nbsp;OsloMet</strong>
 						</a>
 					</p>
 			</div><!-- column -->
