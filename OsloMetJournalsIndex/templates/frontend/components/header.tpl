@@ -1,5 +1,5 @@
 {**
- * lib/pkp/templates/frontend/components/header.tpl
+ * /plugins/themes/OsloMetJournalsIndex/frontend/components/header.tpl
  *
  * Copyright (c) 2014-2017 Simon Fraser University
  * Copyright (c) 2003-2017 John Willinsky
@@ -13,10 +13,10 @@
  *}
 {strip}
 	{* Determine whether a logo or title string is being displayed *}
-	{assign var="showingLogo" value=true}
-	{if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
+	{assign var="showingLogo" value=false}
+	{*{if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
 		{assign var="showingLogo" value=false}
-	{/if}
+	{/if}*}
 {/strip}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
