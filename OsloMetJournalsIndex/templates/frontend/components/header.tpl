@@ -22,7 +22,7 @@
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 {if !$pageTitleTranslated}{translate|assign:"pageTitleTranslated" key=$pageTitle}{/if}
 {include file="frontend/components/headerHead.tpl"}
-<body class="no-borders pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if}" dir="{$currentLocaleLangDir|escape|default:"ltr"}">
+<body class="pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if}" dir="{$currentLocaleLangDir|escape|default:"ltr"}">
 
 	<div class="cmp_skip_to_content">
 		<a href="#pkp_content_main">{translate key="navigation.skip.main"}</a>
@@ -43,9 +43,26 @@
 					{else}
 						<div class="pkp_site_name">
 					{/if}
-						<a class="homeUrl" href="{$homeUrl}">
-							{$displayPageHeaderTitle}
-						</a>
+						{if $currentContext && $multipleContexts}
+							{url|assign:"homeUrl" journal="index" router=$smarty.const.ROUTE_PAGE}
+						{else}
+							{url|assign:"homeUrl" page="index" router=$smarty.const.ROUTE_PAGE}
+						{/if}
+						{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+							<a href="{$homeUrl}" class="is_img">
+								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
+							</a>
+						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
+							<a href="{$homeUrl}" class="is_text">{$displayPageHeaderTitle}</a>
+						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_array($displayPageHeaderTitle)}
+							<a href="{$homeUrl}" class="is_img">
+								<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle.altText|escape}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" />
+							</a>
+						{else}
+							<a href="{$homeUrl}" class="is_img">
+								<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="180" height="90" />
+							</a>
+						{/if}
 					{if $requestedOp == 'index'}
 						</h1>
 					{else}
