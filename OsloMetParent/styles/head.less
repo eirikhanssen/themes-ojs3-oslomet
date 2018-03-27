@@ -1,0 +1,43 @@
+/**
+ * @file plugins/themes/OsloMetParent/styles/head.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// Structural components of the header layout
+.pkp_structure_head {
+	background-color: @bg-head;
+	border-bottom: @bg-border;
+}
+
+.pkp_head_wrapper {
+
+}
+
+.pkp_site_name_wrapper {
+	
+	.pkp_site_name {
+		display:flex; 
+		flex-flow: row wrap;
+		justify-content: left;
+
+		& > a {
+			flex-grow:1;
+			display:flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: left;
+			padding-left: 100px;
+			height: 5em;
+			}
+		}
+	}	
+
+
+
