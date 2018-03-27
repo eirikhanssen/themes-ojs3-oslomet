@@ -1,5 +1,5 @@
 {**
- * lib/pkp/templates/frontend/components/header.tpl
+ * plugins/themes/OsloMetJIndex/templates/frontend/components/header.tpl
  *
  * Copyright (c) 2014-2017 Simon Fraser University
  * Copyright (c) 2003-2017 John Willinsky
@@ -19,6 +19,7 @@
 	{/if}
 {/strip}
 <!DOCTYPE html>
+<!-- plugins/themes/OsloMetJIndex/templates/frontend/components/header.tpl -->
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 {if !$pageTitleTranslated}{translate|assign:"pageTitleTranslated" key=$pageTitle}{/if}
 {include file="frontend/components/headerHead.tpl"}

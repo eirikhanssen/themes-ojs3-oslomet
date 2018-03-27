@@ -1,5 +1,5 @@
 {**
- * templates/frontend/pages/indexSite.tpl
+ * plugins/themes/OsloMetJIndex/templates/frontend/pages/indexSite.tpl
  *
  * Copyright (c) 2014-2017 Simon Fraser University
  * Copyright (c) 2003-2017 John Willinsky
@@ -9,7 +9,7 @@
  *
  *}
 {include file="frontend/components/header.tpl"}
-
+<!-- plugins/themes/OsloMetJIndex/templates/frontend/pages/indexSite.tpl -->
 <div class="page_index_site">
 
 	{if $about}

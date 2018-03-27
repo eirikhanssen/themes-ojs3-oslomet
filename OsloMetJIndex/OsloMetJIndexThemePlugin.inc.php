@@ -1,21 +1,21 @@
 <?php
 
 /**
- * @file plugins/themes/OsloMetJournalsIndex/OsloMetJournalsIndexThemePlugin.inc.php
+ * @file plugins/themes/OsloMetJIndex/OsloMetJIndexThemePlugin.inc.php
  *
  * Copyright (c) 2014-2017 Simon Fraser University
  * Copyright (c) 2003-2017 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class OsloMetJournalsIndexThemePlugin
- * @ingroup plugins_themes_OsloMetJournalsIndex
+ * @class OsloMetJIndexThemePlugin
+ * @ingroup plugins_themes_OsloMetJIndex
  *
- * @brief OsloMetJournalsIndex theme
+ * @brief OsloMetJIndex theme
  */
 
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class OsloMetJournalsIndexThemePlugin extends ThemePlugin {
+class OsloMetJIndexThemePlugin extends ThemePlugin {
 
     /**
      * Load the custom styles for our theme
@@ -38,7 +38,7 @@ class OsloMetJournalsIndexThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __('plugins.themes.OsloMetJournalsIndex.name');
+		return __('plugins.themes.OsloMetJIndex.name');
 	}
 
 	/**
@@ -46,6 +46,6 @@ class OsloMetJournalsIndexThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __('plugins.themes.OsloMetJournalsIndex.description');
+		return __('plugins.themes.OsloMetJIndex.description');
 	}
 }

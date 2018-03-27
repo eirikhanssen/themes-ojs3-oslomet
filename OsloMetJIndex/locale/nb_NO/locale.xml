@@ -2,7 +2,7 @@
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
-  * plugins/themes/OsloMetJournalsIndex/locale/nb_NO/locale.xml
+  * plugins/themes/OsloMetJIndex/locale/nb_NO/locale.xml
   *
   * Copyright (c) 2014-2017 Simon Fraser University
   * Copyright (c) 2003-2017 John Willinsky
@@ -12,6 +12,6 @@
   -->
 
 <locale name="nb_NO" full_name="Norwegian bokmål">
-	<message key="plugins.themes.OsloMetJournalsIndex.name">OsloMet Journals Index Theme</message>
-	<message key="plugins.themes.OsloMetJournalsIndex.description">Dette theme implementerer det visuelle uttrykket for tidsskriftet: OsloMet Journals Site Index.</message>
+	<message key="plugins.themes.OsloMetJIndex.name">OsloMet Journals Index Theme</message>
+	<message key="plugins.themes.OsloMetJIndex.description">Dette theme implementerer det visuelle uttrykket for tidsskriftet: OsloMet Journals Site Index.</message>
 </locale>
