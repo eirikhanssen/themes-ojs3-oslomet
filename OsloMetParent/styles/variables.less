@@ -11,6 +11,18 @@
  */
 
 // background
+
+// create absolute/rooted folder reference to image folder in theme
+
+// maybe change/override this root in the future for themes if needed, i.e. beginning with https://servername/...
+@site-root:"/";
+@themefolder:"OsloMetParent";
+@themepath:"@{site-root}plugins/themes/@{themefolder}";
+@img:"@{themepath}/img";
+
+@medium-header-width: 40em;
+@header-min-height: 5rem;
+
 @bg-head: @bg-base;
 @bg-shade-light:               #eee; // new light bg-shade
 @breadcrumbs-height: 2.5rem;

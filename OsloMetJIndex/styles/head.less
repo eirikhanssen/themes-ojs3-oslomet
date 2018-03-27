@@ -11,23 +11,45 @@
  */
 
 // Structural components of the header layout
+
 .pkp_structure_head {
+    background-color: @bg-head;
 
-}
+	.pkp_head_wrapper {
+        background-image: url("@{img}/open-access-transp-bg-609x113_without_OA-icon.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: auto 100%;
+        position: relative;
 
-.pkp_head_wrapper {
-	
-}
+       /* &::before {
+            content:"";
+            height: 100%;
+            width: 100%;
+            position: absolute;
 
-.pkp_site_name_wrapper {
-	
-	.pkp_site_name {
+        }*/
 
-		& > a {
+		.pkp_site_name_wrapper {
 
+			.pkp_site_name {
+                
+               // background-size: auto calc(~"100% - 2.5rem");
+				& > a {
+                    @media (min-width: @medium-header-width) {
+                        padding-left: calc(~"4rem +" @header-min-height);
+                        background-image: url("@{img}/hioalogo-en-semi-transp113x113.png");
+                        background-repeat: no-repeat;
+                        background-position: 1.5rem center;
+                        background-size: auto calc(~"100% - 0rem");
+                    }
+				}
 			}
 		}
-	}	
 
-
+		.pkp_navigation_user_wrapper {
+			//background: rgba(0,0,0,0.3);
+		}
+	}
+}
 

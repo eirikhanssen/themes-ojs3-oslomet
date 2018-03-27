@@ -11,33 +11,72 @@
  */
 
 // Structural components of the header layout
+
+
 .pkp_structure_head {
 	background-color: @bg-head;
 	border-bottom: @bg-border;
-}
 
-.pkp_head_wrapper {
+	.pkp_head_wrapper {
+		margin:0;
+		width: 100%;
+		padding:0;
 
-}
+		.pkp_site_name_wrapper {
+			padding-top: 1rem;
+			padding-bottom:1rem;
+			.pkp_site_name {
+				display:flex; 
+				flex-flow: row wrap;
+				justify-content: center;
+				min-height: @header-min-height;
+				padding:0;
+				
+				text-shadow: 1px 1px 0px black, 1px 1px 5px black;
+				@media (min-width: @medium-header-width) {
+					justify-content: left;
+				}
+				
 
-.pkp_site_name_wrapper {
-	
-	.pkp_site_name {
-		display:flex; 
-		flex-flow: row wrap;
-		justify-content: left;
-
-		& > a {
-			flex-grow:1;
-			display:flex;
-			flex-direction: column;
-			justify-content: center;
-			text-align: left;
-			padding-left: 100px;
-			height: 5em;
+				& > a {
+					flex-grow:1;
+					display:flex;
+					flex-direction: column;
+					justify-content: center;
+					text-align: center;
+					padding-top: 2rem;
+					padding-bottom: 2rem;
+					color: #eee;
+					&:hover, &:focus {
+						color: white;
+					}
+					@media (min-width: @medium-header-width) {
+						text-align: left;
+					}
+				}
 			}
 		}
-	}	
 
+		.pkp_navigation_user_wrapper {
+			text-shadow: 1px 1px 0px black;
+			.profile {
+				// add dead area below the links
+				background: transparent;
+				padding: .5rem; 
+				a {
+					background: rgba(0,0,0,0.4);
+					margin: .25rem;
+					border-radius: .25rem;
+					padding: .1rem .3rem;
+					text-align: center;
 
+					&:hover,
+					&:focus {
+						background: rgba(0,0,0,0.8);
+					}
+				}
+			}
+		}
+	}
+}
 
