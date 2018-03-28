@@ -1,0 +1,97 @@
+/**
+ * @file plugins/themes/NJCIE/styles/head.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// Structural components of the header layout
+
+.pkp_structure_head {
+    background-color: white;
+
+	.pkp_head_wrapper {
+        
+
+        &::before {
+            content:"";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left:0; right:0;
+            background-color: @bg-head;
+        }
+
+		.pkp_site_name_wrapper {
+            background-image: url("@{img}/header-bg.jpg");
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: auto 100%;
+            position: relative;
+            z-index: 1;
+            
+			.pkp_site_name {
+                font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 3rem;
+				& > a {
+                    
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: stretch;
+                    justify-content: flex-start;
+                    padding-top: 1rem;
+					padding-bottom: 1rem;
+                    .title_tfu {
+                        flex-shrink: 1;
+                        background-color: black;
+                        color: white;
+                        padding: .5em;
+                        position: relative;
+                    
+                        .title_tf {
+                            flex-shrink: 1;
+                            text-transform:uppercase;
+                            font-weight: normal;
+                            color: yellow;
+                            font-size: .85em;
+                            letter-spacing: .27em;
+                            word-spacing: .35em;  
+                        }
+                        
+                        .title_u {
+                            display:block;
+                        }
+                    }
+                    &:hover, &:focus {
+                        .title_tf {
+                            text-shadow: 0 0 .75em orange, 0 0 .5em white;
+                        }
+                        .title_u {
+                            text-shadow: 1px 1px 0 black, 0 0 .5em orange, 0 0 .2em white;
+                        }
+                        
+                    }
+                    &::after {
+                        display: block;
+                        flex-grow: 2;
+                        content:"";
+                        background:transparent;
+                        
+                    }
+                }
+			}
+		}
+	}
+    .pkp_navigation_primary_row {
+        background-color: @primary-nav-bg;
+    }
+	.pkp_navigation_user_wrapper {
+			
+	}
+}
