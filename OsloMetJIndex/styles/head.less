@@ -22,20 +22,14 @@
         background-size: auto 100%;
         position: relative;
 
-       /* &::before {
-            content:"";
-            height: 100%;
-            width: 100%;
-            position: absolute;
-
-        }*/
-
 		.pkp_site_name_wrapper {
 
 			.pkp_site_name {
-                
-               // background-size: auto calc(~"100% - 2.5rem");
+                text-shadow: 1px 1px 0px @head-shadow-color, 1px 1px 5px @head-shadow-color;
 				& > a {
+                    &:hover, &:focus {
+						color: white;
+					}
                     @media (min-width: @medium-header-width) {
                         padding-left: calc(~"4rem +" @header-min-height);
                         background-image: url("@{img}/hioalogo-en-semi-transp113x113.png");
@@ -48,7 +42,7 @@
 		}
 
 		.pkp_navigation_user_wrapper {
-			//background: rgba(0,0,0,0.3);
+
 		}
 	}
 }

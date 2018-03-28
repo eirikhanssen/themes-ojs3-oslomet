@@ -25,14 +25,16 @@
 		.pkp_site_name_wrapper {
 			padding-top: 1rem;
 			padding-bottom:1rem;
+			display:flex;
 			.pkp_site_name {
+				flex-grow:1;
 				display:flex; 
 				flex-flow: row wrap;
 				justify-content: center;
 				min-height: @header-min-height;
+				margin:0;
 				padding:0;
 				
-				text-shadow: 1px 1px 0px black, 1px 1px 5px black;
 				@media (min-width: @medium-header-width) {
 					justify-content: left;
 				}
@@ -44,14 +46,12 @@
 					flex-direction: column;
 					justify-content: center;
 					text-align: center;
-					padding-top: 2rem;
-					padding-bottom: 2rem;
-					color: #eee;
-					&:hover, &:focus {
-						color: white;
-					}
+					padding:2rem;
+					color: @head-titlecolor;
+					&:hover, &:focus {}
 					@media (min-width: @medium-header-width) {
 						text-align: left;
+						padding:2rem 4rem;
 					}
 				}
 			}
@@ -64,7 +64,7 @@
 }
 .pkp_navigation_user_wrapper,
 .pkp_navigation_primary_row {
-
+	z-index: 10;
 	.pkp_nav_list {
 		ul {
 			width: 14em;
