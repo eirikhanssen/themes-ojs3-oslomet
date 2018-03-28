@@ -13,11 +13,11 @@
 // Structural components of the header layout
 
 .pkp_structure_head {
-    background-color: white;
+    
 
 	.pkp_head_wrapper {
-        
-
+        position: relative;
+        z-index: 1;
         &::before {
             content:"";
             height: 100%;
@@ -28,7 +28,10 @@
         }
 
 		.pkp_site_name_wrapper {
-            position: relative;
+            // if this element is position:relative,
+            // the background in pseudo element will fit height of this element (smaller)
+            // if not, then background will fit height of parent element (larger)
+            // position: relative;
             z-index: 1;
 
             &::before,
