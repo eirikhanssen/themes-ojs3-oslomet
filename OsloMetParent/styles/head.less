@@ -83,13 +83,36 @@
 	} 
 }
 
+.pkp_navigation_user_wrapper {
+	left: auto;
+	right: .5rem;
+	top: .5rem;
+	padding:0;
+	.pkp_nav_list {
+		padding:0;
+	}
+	.pkp_nav_list > li:hover ul {
+		right: 0;
+		left:auto;
+	}
+}
+
+.pkp_navigation_user_wrapper > .pkp_nav_list > .profile > a {
+	background-color:rgba(0,0,0,0.5);
+	text-shadow:none;
+	border-radius: .25em;
+	padding-right: .75em;
+
+}
+
 #navigationPrimary > li {
 	text-shadow: 1px 1px 0px #333;
 }
 
-.pkp_nav_list > li:hover ul {
-    left: 50%;
-    transform: translate(-50%,0);
+.pkp_navigation_primary > li:hover ul {
+	right: 50%;
+	left:auto;
+	transform:translate(55%,0);
 }
 
 .pkp_nav_list ul a:hover, .pkp_nav_list ul a:focus {
