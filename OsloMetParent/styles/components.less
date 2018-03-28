@@ -10,42 +10,7 @@
 
 // testing alternative breadcrumbs
 body {
-    
-    .cmp_breadcrumbs {
-        background: #eee;
-        width:100%;
-        position:relative;
-        z-index:1;
-        margin-bottom:2rem;
-
-        @media (min-width: @screen-desktop) {
-            width: calc(~"100% +" @sidebar-width);
-        }
+    .cmp_breadcrumbs .current {
+        color: #333;
     }
-    
-    .cmp_breadcrumbs::before {
-        position:absolute;
-        content:"";
-        background: #eee;
-        top:0;
-        bottom:0;
-        width: 9999px;
-        right: 100%;
-        z-index: -10;
-        box-shadow: 9999px 0 0 #eee;
-    }
-    
-    .cmp_breadcrumbs ol {
-        margin-bottom:0;
-    }
-    
-    .cmp_breadcrumbs .current h1 {
-        color: #444;
-    }
-    
-    .pkp_structure_content {
-        padding-top:0;
-        
-    }
-    
 }

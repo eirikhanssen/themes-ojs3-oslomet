@@ -56,26 +56,35 @@
 				}
 			}
 		}
+	}
+}
 
-		.pkp_navigation_primary_row {
-			background: @primary-nav-bg;
-		}
-		.pkp_navigation_user_wrapper {
-			.pkp_navigation_user {
-				ul {
-					width: 14em;
-				}
-			}
-			.pkp_navigation_user .profile {
-				text-shadow: 1px 1px 0px black, 0 0 .25em rgba(0, 0, 0, 0.5);
-				font-weight: bold;
+.pkp_navigation_primary_row {
+	background: @primary-nav-bg;
+}
+.pkp_navigation_user_wrapper,
+.pkp_navigation_primary_row {
 
-				.dropdown-menu .profile {
-					text-shadow: none;
-				}
-			}
+	.pkp_nav_list {
+		ul {
+			width: 14em;
 		}
 	}
+	.pkp_nav_list {
+		li {
+			font-weight: bold;
+			.dropdown-menu li {
+				text-shadow: none;
+			}
+		}
+		.profile {
+			text-shadow: 1px 1px 0px #333, 0 0 .25em rgba(0, 0, 0, 0.5);
+		}
+	} 
+}
+
+#navigationPrimary > li {
+	text-shadow: 1px 1px 0px #333;
 }
 
 .pkp_nav_list > li:hover ul {
