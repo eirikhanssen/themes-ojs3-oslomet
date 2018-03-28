@@ -57,20 +57,33 @@
 			}
 		}
 
-		.pkp_navigation_user {
-			ul {
-				width: 14em;
+		.pkp_navigation_primary_row {
+			background: @primary-nav-bg;
+		}
+		.pkp_navigation_user_wrapper {
+			.pkp_navigation_user {
+				ul {
+					width: 14em;
+				}
 			}
-			& > .profile {
-				text-shadow: 1px 1px 0px black;
-				font-weight: bold;	
+			.pkp_navigation_user .profile {
+				text-shadow: 1px 1px 0px black, 0 0 .25em rgba(0, 0, 0, 0.5);
+				font-weight: bold;
+
+				.dropdown-menu .profile {
+					text-shadow: none;
+				}
 			}
 		}
-		
 	}
 }
 
 .pkp_nav_list > li:hover ul {
     left: 50%;
     transform: translate(-50%,0);
+}
+
+.pkp_nav_list ul a:hover, .pkp_nav_list ul a:focus {
+	color: rgb(3, 64, 105);
+	background: #eee;
 }
