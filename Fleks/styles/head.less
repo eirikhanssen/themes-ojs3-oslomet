@@ -1,0 +1,90 @@
+/**
+ * @file plugins/themes/NJCIE/styles/head.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// Structural components of the header layout
+
+.pkp_structure_head {
+    
+
+	.pkp_head_wrapper {
+        position: relative;
+        z-index: 1;
+        
+        &::before {
+            content:"";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left:0; right:0;
+            background-color: @bg-head;
+            @media (min-width: @medium-header-width){
+                background-color: transparent;
+            }
+        }
+
+		.pkp_site_name_wrapper {
+            position: relative;
+            // if this element is position:relative,
+            // the background in pseudo element will fit height of this element (smaller)
+            // if not, then background will fit height of parent element (larger)
+            // position: relative;
+            z-index: 1;
+
+            &::before,
+            &::after {
+                @media (min-width: @medium-header-width){
+                    content: "";
+                    position: absolute;
+                    background-image: url("@{img}/header-bg.jpg");
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    background-size: auto 100%;
+                    left:0;
+                    top:0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                }
+                
+            }
+
+            &::after {
+                background-image: url("@{img}/header-bg-1px.jpg");
+                z-index: -2;
+                background-repeat: repeat-x;
+            }
+
+			.pkp_site_name {
+                font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 3rem;
+                @media (min-width: @medium-header-width) {
+                    left: -9999px;
+                }
+									
+				& > a {
+                    /*background-color: rgba(255,255,255,0.5);
+                    @media (min-width: @medium-header-width) {
+						background-color: transparent;
+						text-align: left;
+                        padding:2rem 4rem;
+                        padding-right: 12rem;
+					}*/
+                }
+			}
+		}
+	}
+    .pkp_navigation_primary_row {
+        background-color: @primary-nav-bg;
+    }
+}
