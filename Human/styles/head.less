@@ -1,0 +1,89 @@
+/**
+ * @file plugins/themes/FormAkademisk/styles/head.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// Structural components of the header layout
+
+.pkp_structure_head {
+    
+
+	.pkp_head_wrapper {
+        position: relative;
+        z-index: 1;
+        
+        &::before {
+            content:"";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left:0; right:0;
+            background-color: @bg-head;
+            @media (min-width: @medium-header-width){
+                background-color: transparent;
+            }
+        }
+
+		.pkp_site_name_wrapper {
+            position: relative;
+            // if this element is position:relative,
+            // the background in pseudo element will fit height of this element (smaller)
+            // if not, then background will fit height of parent element (larger)
+            // position: relative;
+            z-index: 1;
+
+            &::before,
+            &::after {
+                @media (min-width: @medium-header-width){
+                }
+                
+            }
+
+            &::after {
+
+            }
+
+			.pkp_site_name {
+                font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 3rem;
+                
+                @media (min-width: @medium-header-width) {
+                    background-image: url("@{img}/hrer_header_banner.png");
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    background-size: auto 100%;
+                    min-height: 5em;
+                    min-height: 5rem;
+                    
+                }
+
+                &::before, &::after {
+                
+                }
+                &::before {
+                
+                }
+                &::after {
+                
+                }
+									
+				& > a {
+                    @media (min-width: @medium-header-width) {
+                        color: transparent;
+                    }
+                }
+			}
+		}
+	}
+    .pkp_navigation_primary_row {
+        background-color: @primary-nav-bg;
+    }
+}
