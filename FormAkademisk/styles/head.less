@@ -42,26 +42,12 @@
             &::before,
             &::after {
                 @media (min-width: @medium-header-width){
-                    content: "";
-                    position: absolute;
-                    background-image: url("@{img}/header-bg.jpg");
-                    background-repeat: no-repeat;
-                    background-position: left center;
-                    background-size: auto 100%;
-                    left:0;
-                    top:0;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    z-index: -1;
                 }
                 
             }
 
             &::after {
-                background-image: url("@{img}/header-bg-1px.jpg");
-                z-index: -2;
-                background-repeat: repeat-x;
+
             }
 
 			.pkp_site_name {
@@ -69,17 +55,31 @@
                 font-weight: bold;
                 font-size: 3rem;
                 @media (min-width: @medium-header-width) {
-                    left: -9999px;
+                    background-image: url("@{img}/Logo_Celebrate_10_2017_402x71.png"), url("@{img}/Form_Akademisk_402x71.png"), url("@{img}/Logo_Celebrate_10_2017_402x71.png");
+                    background-repeat: no-repeat;
+                    background-position: 00%, 50%, 100%;
+                    background-size: 30% auto, 30% auto, 30% auto;
+                    min-height: 5em;
+                    min-height: 5rem;
+                }
+
+                .title_fa {
+                    @media (min-width: @medium-header-width) {
+                        position: relative;
+                        left: -9999px;
+                    }
+                }
+
+                &::before,&::after {
+                }
+
+                &::before {
+                }
+                &::after {
                 }
 									
 				& > a {
-                    /*background-color: rgba(255,255,255,0.5);
-                    @media (min-width: @medium-header-width) {
-						background-color: transparent;
-						text-align: left;
-                        padding:2rem 4rem;
-                        padding-right: 12rem;
-					}*/
+
                 }
 			}
 		}
