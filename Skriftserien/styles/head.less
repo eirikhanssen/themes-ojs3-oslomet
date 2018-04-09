@@ -1,0 +1,91 @@
+/**
+ * @file plugins/themes/Skriftserien/styles/head.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// Structural components of the header layout
+
+.pkp_structure_head {
+    
+	.pkp_head_wrapper {
+        position: relative;
+        z-index: 1;
+		.pkp_site_name_wrapper {
+            background-color: @head-bg-color;
+            color: @head-color;
+            // if this element is position:relative,
+            // the background in pseudo element will fit height of this element (smaller)
+            // if not, then background will fit height of parent element (larger)
+            // position: relative;
+            
+            &::before,
+            &::after {
+                content: "";
+                    position: absolute;
+                    background-image: url("@{img}/header-bg.jpg");
+                    background-color: #fbfbfb;
+                    background-repeat: no-repeat;
+                    background-position: -20rem center;
+                    background-size: auto 100%;
+                    left:0;
+                    top:0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -2;
+
+                    @media (min-width: @medium-header-width) {
+                        background-position: right center;
+                    }
+            }
+            &::after {
+                //background-color: @bg-head;
+                z-index: -1;
+            }
+
+			.pkp_site_name {
+                font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 3rem;
+				& > a {
+                    color: @head-color;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: stretch;
+                    justify-content: flex-start;
+                    padding-top: 1rem;
+					padding-bottom: 1rem;
+                    
+                    &:hover, &:focus {
+                        text-shadow: 0 0 5px white, 0 0 15px rgba(247, 255, 177, 0.835);
+                    }
+                }
+			}
+		}
+	}
+    .pkp_navigation_primary_row {
+        
+        background-color: @primary-nav-bg-color;
+    }
+    .pkp_navigation_primary > li > a {
+        color: @primary-nav-color;
+        text-shadow: @primary-nav-text-shadow;
+    }
+
+    .pkp_head_wrapper .pkp_search .search_prompt {
+        color: @primary-nav-color;
+    }
+    .pkp_head_wrapper .pkp_search .search_prompt:hover,
+    .pkp_head_wrapper .pkp_search .search_prompt:focus,
+    .pkp_navigation_primary > li > a:hover, 
+    .pkp_navigation_primary > li > a:focus {
+        border-color: @primary-nav-color;
+    }
+}
