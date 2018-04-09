@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!DOCTYPE locale SYSTEM "../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
   * locale/nb_NO/locale.xml
@@ -11,18 +11,18 @@
   * Localization strings.
   -->
 
-<locale name="nb_NO" full_name="Norsk">
-	<message key="plugins.themes.default.name">Default Theme (OJS3x Standard layout/stilsett)</message>
-	<message key="plugins.themes.default.option.typography.notoSerif">Noto Serif: En serif-variant af Google's digital-native font.</message>
-	<message key="plugins.themes.default.option.typography.label">Typografi</message>
-	<message key="plugins.themes.default.option.typography.notoSans">Noto Sans: En digital-native font designet av Google til bruk med omfattende språkstøtte</message>
-	<message key="plugins.themes.default.option.typography.notoSerif_notoSans">Noto Serif/Noto Sans: En komplementær blanding av serif i overskrifter og sans-serif i brødtekst</message>
-	<message key="plugins.themes.default.option.typography.notoSans_notoSerif">Noto Sans/Noto Serif: En komplementær blanding av sans-serif i overskrifter og serif i brødtekst.</message>
-	<message key="plugins.themes.default.option.typography.lato">Lato: En populær moderne sans-serif font.</message>
-	<message key="plugins.themes.default.option.typography.lora">Lora: En bred serif font velegnet til online-lesning.</message>
-	<message key="plugins.themes.default.option.typography.lora_openSans">Lora/Open Sans: En komplementær blanding af serif i overskrifter og sans-serif i brødtekst.</message>
+<locale name="nb_NO" full_name="Norsk Bokmål">
+	<message key="plugins.themes.default.name">Standardtema</message>
+	<message key="plugins.themes.default.description">Dette programtillegget implementerer standardtemaet</message>
+	<message key="plugins.themes.default.option.typography.label">Skrift</message>
+	<message key="plugins.themes.default.option.typography.description">Velg en skrifttype som passer dette tidsskriftet</message>
 	<message key="plugins.themes.default.option.colour.label">Farge</message>
-	<message key="plugins.themes.default.option.colour.description">Velg en farge til sidens header.</message>
-	<message key="plugins.themes.default.option.typography.description">Velg en font, som passer til dette tidsskriftet.</message>
-	<message key="plugins.themes.default.description">Dette theme implementerer standard layout og stilsett.</message>
+	<message key="plugins.themes.default.option.colour.description">Velg en farge for toppteksten</message>
+	<message key="plugins.themes.default.option.typography.notoSerif">Noto Serif: en serif variant av Googles font</message>
+	<message key="plugins.themes.default.option.typography.notoSerif_notoSans">Noto Serif/Noto Sans: En kombinasjon der overskrifter er i serif, mens brødtekst er i sans-serif skrift</message>
+	<message key="plugins.themes.default.option.typography.notoSans_notoSerif">Noto Sans/Noto Serif: En kombinasjon der overskrifter er i sans-serif, mens brødtekst er i serif skrift</message>
+	<message key="plugins.themes.default.option.typography.notoSans">Noto Sans: En digital skrifttype designet av Google for omfattende språkstøtte</message>
+	<message key="plugins.themes.default.option.typography.lato">Lato: En populær og moderne sans-serif skrift</message>
+	<message key="plugins.themes.default.option.typography.lora">Lora: En bred serif skrift som er god for tekst på skjerm</message>
+	<message key="plugins.themes.default.option.typography.lora_openSans">Lora/Open Sans: En kombinasjon med serif overskrifter og sans-serif brødtekst</message>
 </locale>
