@@ -1,0 +1,108 @@
+/**
+ * @file plugins/themes/Skriftserien/styles/head.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// Structural components of the header layout
+
+.pkp_structure_head {
+    
+	.pkp_head_wrapper {
+        position: relative;
+        z-index: 1;
+		.pkp_site_name_wrapper {
+            background-color: @head-bg-color;
+            color: @head-color;
+            // if this element is position:relative,
+            // the background in pseudo element will fit height of this element (smaller)
+            // if not, then background will fit height of parent element (larger)
+            // position: relative;
+            
+            
+            &::before,
+            &::after {
+                
+            }
+            &::after {
+                
+            }
+
+			.pkp_site_name {
+                font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 3rem;
+                
+				& > a {
+                    color: @head-color;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: stretch;
+                    justify-content: flex-start;
+                    
+                    position: relative;
+                    z-index: 1;
+                    
+                    
+                    text-align: center;
+
+                    &::before {
+                        /*
+                        @media screen and (min-width: @screen-phone) {
+                            content:"";
+                            position: absolute;
+                            left: 267px;
+                            height: 50%;
+                            width: 20px;
+                            background-color: 3px solid red;
+                            top: 0;
+                            bottom:0;
+                            margin:auto;
+                            display: block;
+                            z-index: 10;
+                            border-left: 3px solid @head-color;
+                        }
+                        */
+                    }
+                    /*
+                    @media screen and (min-width: @screen-phone) {
+                        text-align: left;
+                        padding-left: 290px;
+                        background-image: url("@{img}/hioalogo-web-black.png");
+                        background-repeat: no-repeat;
+                        background-position: 1rem center;
+                        background-size: 227px auto;
+                    }*/
+
+                    &:hover, &:focus {
+                        text-shadow: 0 0 5px white, 0 0 15px rgba(247, 255, 177, 0.835);
+                    }
+                }
+			}
+		}
+	}
+    .pkp_navigation_primary_row {
+        
+        background-color: @primary-nav-bg-color;
+    }
+    .pkp_navigation_primary > li > a {
+        color: @primary-nav-color;
+        text-shadow: @primary-nav-text-shadow;
+    }
+
+    .pkp_head_wrapper .pkp_search .search_prompt {
+        color: @primary-nav-color;
+    }
+    .pkp_head_wrapper .pkp_search .search_prompt:hover,
+    .pkp_head_wrapper .pkp_search .search_prompt:focus,
+    .pkp_navigation_primary > li > a:hover, 
+    .pkp_navigation_primary > li > a:focus {
+        border-color: @primary-nav-color;
+    }
+}
