@@ -25,6 +25,12 @@
             // if not, then background will fit height of parent element (larger)
             // position: relative;
             
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7c6c59+0,3a342e+88,564e47+99 */
+background: #7c6c59; /* Old browsers */
+background: -moz-linear-gradient(top, #7c6c59 0%, #3a342e 88%, #564e47 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #7c6c59 0%,#3a342e 88%,#564e47 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #7c6c59 0%,#3a342e 88%,#564e47 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c6c59', endColorstr='#564e47',GradientType=0 ); /* IE6-9 */
             
             &::before,
             &::after {
@@ -48,9 +54,13 @@
                     text-shadow:1px 1px 0px black;
                     position: relative;
                     z-index: 1;
-                    
-                    
+                    font-size: 1.25em;
+                    line-height: 1.25em;
                     text-align: center;
+
+                    .highlight {
+                        color: @head-highlight-color;
+                    }
 
                     &::before {
                         
