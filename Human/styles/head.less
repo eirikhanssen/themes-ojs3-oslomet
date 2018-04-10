@@ -20,15 +20,7 @@
         z-index: 1;
         
         &::before {
-            content:"";
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            left:0; right:0;
-            background-color: @bg-head;
-            @media (min-width: @medium-header-width){
-                background-color: transparent;
-            }
+
         }
 
 		.pkp_site_name_wrapper {
@@ -38,6 +30,15 @@
             // if not, then background will fit height of parent element (larger)
             // position: relative;
             z-index: 1;
+            @media (min-width: @medium-header-width) {
+                background-image: url("@{img}/hrer-left-corner.png"), url("@{img}/hrer-right-corner.png");
+                background-repeat: no-repeat, no-repeat;
+                background-position: left center, right center;
+                background-size: auto 100%, auto 100%;
+                min-height: 3em;
+                min-height: 4rem;
+                
+            }
 
             &::before,
             &::after {
@@ -52,18 +53,64 @@
 
 			.pkp_site_name {
                 font-family: Corbel, Arial, sans-serif;
-                font-weight: bold;
-                font-size: 3rem;
+                font-weight: normal;
                 
-                @media (min-width: @medium-header-width) {
-                    background-image: url("@{img}/hrer_header_banner.png");
-                    background-repeat: no-repeat;
-                    background-position: 50%;
-                    background-size: auto 100%;
-                    min-height: 5em;
-                    min-height: 5rem;
-                    
+                a {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                &:hover, &:focus {
+                    text-shadow: 1px 1px 0 black, 0 0 .25em #475cd2, 0 0 .5em rgba(255,255,255,0.5);
                 }
+                
+                }
+
+                .headertext {
+                    font-size: 2rem;
+                    @media screen and (min-width: @medium-header-width){
+                        font-size: 3rem;
+                    }
+                    
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    align-content: center;
+                    text-align: left;
+                    line-height: 1.1em;
+                    .hrer-title {
+                        font-weight: normal;
+                    }
+                    .HRER {
+                        font-weight: bold;
+                        font-size: 1.25em;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        position: relative;
+                        margin-right: 2rem;
+                        line-height: .9em;
+                        text-align: center;
+                        &::after{
+                            content:"";
+                            top: .25em;
+                            bottom: .25em;
+                            right:-1rem;
+                            position: absolute;
+                            border-right: 3px solid @hrer-vertical-border-color;
+                        }
+                        
+                        .HR::after {
+                            content: "HR";
+                        }
+                        .ER::after {
+                            content: "ER";
+                        }
+                    }
+                }
+                
+                
+                
+                
 
                 &::before, &::after {
                 
@@ -77,7 +124,7 @@
 									
 				& > a {
                     @media (min-width: @medium-header-width) {
-                        color: transparent;
+                        
                     }
                 }
 			}
