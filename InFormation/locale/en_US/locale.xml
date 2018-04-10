@@ -2,7 +2,7 @@
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
-  * plugins/themes/Information/locale/en_US/locale.xml
+  * plugins/themes/InFormation/locale/en_US/locale.xml
   *
   * Copyright (c) 2014-2017 Simon Fraser University
   * Copyright (c) 2003-2017 John Willinsky
@@ -12,6 +12,6 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.Information.name">Information Theme</message>
-	<message key="plugins.themes.Information.description">This theme implements the custom look and feel for the journal: InFormation - Nordic Journal of Art and Research.</message>
+	<message key="plugins.themes.InFormation.name">InFormation Theme</message>
+	<message key="plugins.themes.InFormation.description">This theme implements the custom look and feel for the journal: InFormation - Nordic Journal of Art and Research.</message>
 </locale>

@@ -1,21 +1,21 @@
 <?php
 
 /**
- * @file plugins/themes/Information/InformationThemePlugin.inc.php
+ * @file plugins/themes/InFormation/InFormationThemePlugin.inc.php
  *
  * Copyright (c) 2014-2017 Simon Fraser University
  * Copyright (c) 2003-2017 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class InformationThemePlugin
- * @ingroup plugins_themes_Information
+ * @class InFormationThemePlugin
+ * @ingroup plugins_themes_InFormation
  *
- * @brief Information theme
+ * @brief InFormation theme
  */
 
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class InformationThemePlugin extends ThemePlugin {
+class InFormationThemePlugin extends ThemePlugin {
 
     /**
      * Load the custom styles for our theme
@@ -38,7 +38,7 @@ class InformationThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __('plugins.themes.Information.name');
+		return __('plugins.themes.InFormation.name');
 	}
 
 	/**
@@ -46,6 +46,6 @@ class InformationThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __('plugins.themes.Information.description');
+		return __('plugins.themes.InFormation.description');
 	}
 }

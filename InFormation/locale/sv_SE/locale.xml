@@ -2,7 +2,7 @@
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
-  * plugins/themes/Information/locale/sv_SE/locale.xml
+  * plugins/themes/InFormation/locale/sv_SE/locale.xml
   *
   * Copyright (c) 2014-2017 Simon Fraser University
   * Copyright (c) 2003-2017 John Willinsky
@@ -12,6 +12,6 @@
   -->
 
 <locale name="sv_SE" full_name="Svenska">
-	<message key="plugins.themes.Information.name">Information Theme</message>
-	<message key="plugins.themes.Information.description">Det här temat applicerar det visuella uttrycket för tidsskriftet InFormation - Nordic Journal of Art and Research.</message>
+	<message key="plugins.themes.InFormation.name">InFormation Theme</message>
+	<message key="plugins.themes.InFormation.description">Det här temat applicerar det visuella uttrycket för tidsskriftet InFormation - Nordic Journal of Art and Research.</message>
 </locale>

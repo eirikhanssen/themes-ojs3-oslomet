@@ -1,5 +1,5 @@
 {**
- * plugins/themes/Information/templates/frontend/components/header.tpl
+ * plugins/themes/InFormation/templates/frontend/components/header.tpl
  *
  * Copyright (c) 2014-2017 Simon Fraser University
  * Copyright (c) 2003-2017 John Willinsky
