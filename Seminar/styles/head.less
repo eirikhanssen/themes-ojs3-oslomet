@@ -1,5 +1,5 @@
 /**
- * @file plugins/themes/RadOpen/styles/head.less
+ * @file plugins/themes/Seminar/styles/head.less
  *
  * Copyright (c) 2014-2017 Simon Fraser University
  * Copyright (c) 2003-2017 John Willinsky
@@ -17,6 +17,7 @@
 	.pkp_head_wrapper {
         position: relative;
         z-index: 1;
+        
 		.pkp_site_name_wrapper {
             background-color: @head-bg-color;
             color: @head-color;
@@ -25,12 +26,12 @@
             // if not, then background will fit height of parent element (larger)
             // position: relative;
             
-            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7c6c59+0,3a342e+88,564e47+99 */
-background: #7c6c59; /* Old browsers */
-background: -moz-linear-gradient(top, #7c6c59 0%, #3a342e 88%, #564e47 99%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #7c6c59 0%,#3a342e 88%,#564e47 99%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #7c6c59 0%,#3a342e 88%,#564e47 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c6c59', endColorstr='#564e47',GradientType=0 ); /* IE6-9 */
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9de96+0,64844e+14,274c29+80,5e7c49+100 */
+background: #c9de96; /* Old browsers */
+background: -moz-linear-gradient(top, #c9de96 0%, #64844e 14%, #274c29 80%, #5e7c49 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #c9de96 0%,#64844e 14%,#274c29 80%,#5e7c49 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #c9de96 0%,#64844e 14%,#274c29 80%,#5e7c49 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#5e7c49',GradientType=0 ); /* IE6-9 */
             
             &::before,
             &::after {
@@ -44,6 +45,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c6c59', end
                 font-family: Corbel, Arial, sans-serif;
                 font-weight: bold;
                 font-size: 3rem;
+
+                @media screen and (min-width: @switch-to-image-header-width) {
+                    background-image: url("@{img}/seminar-header.jpg");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 100% auto;
+                }
                 
 				& > a {
                     color: @head-color;
@@ -60,6 +68,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c6c59', end
 
                     .highlight {
                         color: @head-highlight-color;
+                    }
+
+                    .headertext {
+                        @media screen and (min-width: @switch-to-image-header-width){
+                            position: relative;
+                            left: -9999px;
+                        }
                     }
 
                     &::before {
@@ -80,6 +95,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c6c59', end
     .pkp_navigation_primary_row {
         
         background-color: @primary-nav-bg-color;
+
+        .pkp_navigation_primary_wrapper {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
     }
     .pkp_navigation_primary > li > a {
         color: @primary-nav-color;
