@@ -1,5 +1,5 @@
 /**
- * @file plugins/themes/NBF/styles/head.less
+ * @file plugins/themes/Information/styles/head.less
  *
  * Copyright (c) 2014-2017 Simon Fraser University
  * Copyright (c) 2003-2017 John Willinsky
@@ -13,16 +13,26 @@
 // Structural components of the header layout
 
 .pkp_structure_head {
+    background-color: @head-bg-color;
     
 	.pkp_head_wrapper {
         position: relative;
         z-index: 1;
-        background-image: url("@{img}/nbf-header-bg.jpg");
+        /*
+        
+        background-image: url("@{img}/header-bg.jpg");
                 background-position: center center;
                 background-size: auto 100%;
                 background-repeat: repeat-x;
+                */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+74,dddfe3+88,dddfe3+88,f5f6f6+100 */
+background: #f5f6f6; /* Old browsers */
+background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 74%, #dddfe3 88%, #dddfe3 88%, #f5f6f6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f5f6f6 0%,#dbdce2 21%,#b8bac6 74%,#dddfe3 88%,#dddfe3 88%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 74%,#dddfe3 88%,#dddfe3 88%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
 		.pkp_site_name_wrapper {
-            background-color: rgba(0,0,0,0.3);
+            
             color: @head-color;
             
                         
@@ -30,7 +40,6 @@
             // the background in pseudo element will fit height of this element (smaller)
             // if not, then background will fit height of parent element (larger)
             // position: relative;
-            
             
             &::before,
             &::after {
@@ -50,17 +59,15 @@
                     font-family: Corbel, Arial, sans-serif;
                     width: 100%;
                     display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: center;
-                    line-height: 1.5em;
-                    .title_nb_NO {
-                        font-size: 1.55em;
-                        .abbrev {
-                            color: @highlight-color;
-                        }
+                    font-size: 2em;
+                    @media screen and (min-width: @screen-phone){
+                        font-size: 3em;    
                     }
-                    .title_nb_NO, .title_en_US {
-                        margin-top: .5rem;
+                    
+                    line-height: 1em;
+                    .abbrev {
+                        color: @highlight-color;
+                        text-shadow: 1px 1px 0px black, 0 0 .2em #111;
                     }
                 }
 
