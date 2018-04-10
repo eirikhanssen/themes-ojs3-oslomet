@@ -1,0 +1,136 @@
+/**
+ * @file plugins/themes/Techne/styles/head.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// Structural components of the header layout
+
+// which lang header to show:
+
+html[lang="sv-SE"] .title_en,
+html[lang="en-US"] .title_sv {
+    /* hide the version of the of the language not selected */
+    display: none !important;
+}
+
+.pkp_structure_head {
+    
+	.pkp_head_wrapper {
+        position: relative;
+        z-index: 1;
+        
+		.pkp_site_name_wrapper {
+            background-color: @head-bg-color;
+            @media screen and (min-width: @switch-to-image-header-width) {
+                background-image: url("@{img}/techneHeaderTransp.png");
+                background-repeat: no-repeat;
+                background-position: right 1em center;
+                background-size: auto 50%;
+            }
+            color: @head-color;
+            // if this element is position:relative,
+            // the background in pseudo element will fit height of this element (smaller)
+            // if not, then background will fit height of parent element (larger)
+            // position: relative;
+            
+            &::after {
+                
+            }
+
+			.pkp_site_name {
+                font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 2rem;
+
+                
+                
+				& > a {
+                    color: @head-color;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: stretch;
+                    justify-content: flex-start;
+                    text-shadow:1px 1px 0px black;
+                    position: relative;
+                    z-index: 1;
+                    font-size: 1.25em;
+                    line-height: 1.25em;
+                    text-align: center;
+
+                    .highlight {
+                        color: @head-highlight-color;
+                    }
+
+                    .headertext {
+                        font-family: Corbel, Arial, sans-serif;
+                        line-height: 1em;
+                        text-align: left;
+                        .title-techne,
+                        .title-series {
+                            text-transform: uppercase;
+                        }
+                        .title_en, .title_sv {
+                            display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: center;
+                        align-items: flex-start;
+
+                        }
+                        .title-research {
+                            color: black;
+                            font-size: .6em;
+                            margin-top: .25em;
+                            text-shadow: 1px 1px 0px @head-highlight-color, 0 0 1em rgba(255,255,255,0.75);
+                            line-height: 1.25em;
+                        }
+
+                        
+                    }
+                
+
+                    &::before {
+                        
+                    }
+                    /*
+                    @media screen and (min-width: @screen-phone) {
+                        
+                    }*/
+
+                    &:hover, &:focus {
+                        text-shadow:1px 1px 0px black, 0 0 5px rgba(255, 249, 169, 0.678), 0 0 20px rgba(247, 255, 177, 0.25);
+                    }
+                }
+			}
+		}
+	}
+    .pkp_navigation_primary_row {
+        
+        background-color: @primary-nav-bg-color;
+
+        .pkp_navigation_primary_wrapper {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+    .pkp_navigation_primary > li > a {
+        color: @primary-nav-color;
+        text-shadow: @primary-nav-text-shadow;
+    }
+
+    .pkp_head_wrapper .pkp_search .search_prompt {
+        color: @primary-nav-color;
+    }
+    .pkp_head_wrapper .pkp_search .search_prompt:hover,
+    .pkp_head_wrapper .pkp_search .search_prompt:focus,
+    .pkp_navigation_primary > li > a:hover, 
+    .pkp_navigation_primary > li > a:focus {
+        border-color: @primary-nav-color;
+    }
+}
