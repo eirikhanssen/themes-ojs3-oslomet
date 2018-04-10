@@ -1,0 +1,115 @@
+/**
+ * @file plugins/themes/NBF/styles/head.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// Structural components of the header layout
+
+.pkp_structure_head {
+    
+	.pkp_head_wrapper {
+        position: relative;
+        z-index: 1;
+        background-image: url("@{img}/nbf-header-bg.jpg");
+                background-position: center center;
+                background-size: auto 100%;
+                background-repeat: repeat-x;
+		.pkp_site_name_wrapper {
+            background-color: rgba(0,0,0,0.3);
+            color: @head-color;
+            
+                        
+            // if this element is position:relative,
+            // the background in pseudo element will fit height of this element (smaller)
+            // if not, then background will fit height of parent element (larger)
+            // position: relative;
+            
+            
+            &::before,
+            &::after {
+                
+            }
+            &::after {
+                
+            }
+
+			.pkp_site_name {
+                font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 3rem;
+                
+                
+                .headertext {
+                    font-family: Corbel, Arial, sans-serif;
+                    width: 100%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-items: center;
+                    line-height: 1.5em;
+                    .title_nb_NO {
+                        font-size: 1.55em;
+                        .abbrev {
+                            color: @highlight-color;
+                        }
+                    }
+                    .title_nb_NO, .title_en_US {
+                        margin-top: .5rem;
+                    }
+                }
+
+                
+
+				& > a {
+                    color: @head-color;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: stretch;
+                    justify-content: flex-start;
+                    text-shadow:1px 1px 0px black;
+                    position: relative;
+                    z-index: 1;
+                    
+                    
+                    text-align: center;
+
+                    &::before {
+                        
+                    }
+                    /*
+                    @media screen and (min-width: @screen-phone) {
+                        
+                    }*/
+
+                    &:hover, &:focus {
+                        text-shadow:1px 1px 0px black, 0 0 5px rgba(255, 249, 169, 0.678), 0 0 30px rgba(247, 255, 177, 0.3);
+                    }
+                }
+			}
+		}
+	}
+    .pkp_navigation_primary_row {
+        
+        background-color: @primary-nav-bg-color;
+    }
+    .pkp_navigation_primary > li > a {
+        color: @primary-nav-color;
+        text-shadow: @primary-nav-text-shadow;
+    }
+
+    .pkp_head_wrapper .pkp_search .search_prompt {
+        color: @primary-nav-color;
+    }
+    .pkp_head_wrapper .pkp_search .search_prompt:hover,
+    .pkp_head_wrapper .pkp_search .search_prompt:focus,
+    .pkp_navigation_primary > li > a:hover, 
+    .pkp_navigation_primary > li > a:focus {
+        border-color: @primary-nav-color;
+    }
+}
