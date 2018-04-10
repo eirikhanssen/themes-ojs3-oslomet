@@ -1,5 +1,5 @@
 {**
- * plugins/themes/Ungdomsforskning/templates/frontend/components/header.tpl
+ * plugins/themes/PP/templates/frontend/components/header.tpl
  *
  * Copyright (c) 2014-2017 Simon Fraser University
  * Copyright (c) 2003-2017 John Willinsky
@@ -17,7 +17,7 @@
 	{if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
 		{assign var="showingLogo" value=false}
 	{/if}
-    {assign var="titleHTML" value='<div class="title_tfu"><em class="title_tf">Tidsskrift for</em> <span class="title_u">ungdomsforskning</span></div>'}
+    {assign var="titleHTML" value='<div class="headertext">Professions &amp; Professionalism</div>'}
 {/strip}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
