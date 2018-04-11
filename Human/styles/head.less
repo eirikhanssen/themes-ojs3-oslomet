@@ -82,28 +82,32 @@
                         font-weight: normal;
                     }
                     .HRER {
+                        font-family: 'Courier New', Courier, monospace;
                         font-weight: bold;
-                        font-size: 1.25em;
+                        font-size: 1.1em;
                         display: flex;
                         flex-flow: column nowrap;
                         position: relative;
-                        margin-right: 2rem;
-                        line-height: .9em;
+                        margin-right: 3rem;
+                        line-height: 1.05em;
                         text-align: center;
+                        padding-top: .1em;
                         &::after{
                             content:"";
-                            top: .25em;
-                            bottom: .25em;
-                            right:-1rem;
+                            top: 0em;
+                            bottom: 0em;
+                            right:-1.5rem;
                             position: absolute;
                             border-right: 3px solid @hrer-vertical-border-color;
                         }
                         
                         .HR::after {
                             content: "HR";
+                            padding-right: 3px;
                         }
                         .ER::after {
                             content: "ER";
+                            padding-right: 3px;
                         }
                     }
                 }

@@ -1,0 +1,119 @@
+/**
+ * @file plugins/themes/RERM/styles/head.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// Structural components of the header layout
+
+.pkp_structure_head {
+    
+	.pkp_head_wrapper {
+        position: relative;
+        z-index: 1;
+        background-color: @head-bg-color;
+            color: @head-color;
+            background-image: url("@{img}/rerm-bg.jpg");
+            background-position: center center;
+            background-size: auto 100%;
+		.pkp_site_name_wrapper {
+            background: rgba(255,255,255,0.5);
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8f2ff+0,e1e8f7+100&0+0,0.5+20,0.75+50,0.75+80,0+100 */
+background: -moz-linear-gradient(top, rgba(216,242,255,0) 0%, rgba(218,240,253,0.5) 20%, rgba(221,237,251,0.75) 50%, rgba(223,234,249,0.75) 80%, rgba(225,232,247,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(216,242,255,0) 0%,rgba(218,240,253,0.5) 20%,rgba(221,237,251,0.75) 50%,rgba(223,234,249,0.75) 80%,rgba(225,232,247,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(216,242,255,0) 0%,rgba(218,240,253,0.5) 20%,rgba(221,237,251,0.75) 50%,rgba(223,234,249,0.75) 80%,rgba(225,232,247,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d8f2ff', endColorstr='#00e1e8f7',GradientType=0 ); /* IE6-9 */
+
+// if this element is position:relative,
+            // the background in pseudo element will fit height of this element (smaller)
+            // if not, then background will fit height of parent element (larger)
+            // position: relative;
+            
+            &::before,
+            &::after {
+                
+            }
+            &::after {
+                
+            }
+
+			.pkp_site_name {
+                
+                font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 15vw;
+                @media screen and (min-width: @screen-phone){
+                    font-size: 1.5rem;
+                }
+                .title_rerm {
+                    display: block;
+                    text-align: center;
+                    
+                    .initial {display: inline;}
+                    .remainder {display: none;
+                        @media screen and (min-width: @screen-phone){
+                            display: inline;
+                        }
+                    }
+                    
+                }
+
+                
+				& > a {
+                    color: @head-color;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: stretch;
+                    justify-content: center;
+                    text-shadow:1px 1px 0px @head-highlight-color;
+                    position: relative;
+                    z-index: 1;
+                    font-size: 1.25em;
+                    line-height: 1.25em;
+                    text-align: center;
+
+                    .highlight {
+                        color: @head-highlight-color;
+                    }
+
+                    &::before {
+                        
+                    }
+                    /*
+                    @media screen and (min-width: @screen-phone) {
+                        
+                    }*/
+
+                    &:hover, &:focus {
+                        text-shadow:1px 1px 0px @head-highlight-color, 0 0 5px rgb(112, 135, 211), 0 0 1em rgba(255, 255, 255, 1);
+                    }
+                }
+			}
+		}
+	}
+    .pkp_navigation_primary_row {
+        
+        background-color: @primary-nav-bg-color;
+    }
+    .pkp_navigation_primary > li > a {
+        color: @primary-nav-color;
+        text-shadow: @primary-nav-text-shadow;
+    }
+
+    .pkp_head_wrapper .pkp_search .search_prompt {
+        color: @primary-nav-color;
+    }
+    .pkp_head_wrapper .pkp_search .search_prompt:hover,
+    .pkp_head_wrapper .pkp_search .search_prompt:focus,
+    .pkp_navigation_primary > li > a:hover, 
+    .pkp_navigation_primary > li > a:focus {
+        border-color: @primary-nav-color;
+    }
+}
