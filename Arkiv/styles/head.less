@@ -1,0 +1,127 @@
+/**
+ * @file plugins/themes/Arkiv/styles/head.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// Structural components of the header layout
+
+.pkp_structure_head {
+    
+	.pkp_head_wrapper {
+        position: relative;
+        z-index: 1;
+        
+		.pkp_site_name_wrapper {
+            color: @head-color;
+            position: relative;
+            z-index: 1;
+            
+            // if this element is position:relative,
+            // the background in pseudo element will fit height of this element (smaller)
+            // if not, then background will fit height of parent element (larger)
+            // position: relative;
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top:0;
+                left:0;
+                bottom:0;
+                right: 0;
+                display: block;
+            }
+
+            &::before {
+                z-index:-2;
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d37847+0,9e5a35+22,9e5a35+22,472316+100 */
+background: rgb(211,120,71); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(211,120,71,1) 0%, rgba(158,90,53,1) 22%, rgba(158,90,53,1) 22%, rgba(71,35,22,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(211,120,71,1) 0%,rgba(158,90,53,1) 22%,rgba(158,90,53,1) 22%,rgba(71,35,22,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(211,120,71,1) 0%,rgba(158,90,53,1) 22%,rgba(158,90,53,1) 22%,rgba(71,35,22,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d37847', endColorstr='#472316',GradientType=0 ); /* IE6-9 */
+               
+            }
+            &::after {
+                z-index:-1;
+                background-image: url("@{img}/arkivknuten-transp-1px.png");
+                background-position: center top .75rem;
+                background-size: auto 100%;
+                background-repeat: repeat-x;
+                
+                @media screen and (min-width: @screen-tablet) {
+                    background-image: url("@{img}/arkivknuten-transp.png"), url("@{img}/arkivknuten-transp-1px.png");
+                    background-position: left top .75rem, center top .75rem;
+                    background-size: auto 100%, auto 100%;
+                    background-repeat: no-repeat, repeat-x;
+                }
+            }
+
+			.pkp_site_name {
+                
+                font-weight: bold;
+                
+
+				& > a {
+                    font-size: 9vw;
+                    @media screen and (min-width: @screen-tablet) {
+                        font-size: 3.5rem;
+                    }
+                    font-family: 'Times New Roman', Times, serif;
+                    color: @head-color;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: stretch;
+                    justify-content: center;
+                    text-shadow:1px 1px 0px black, 0 0 1em black;
+                    position: relative;
+                    z-index: 1;
+                    
+                    text-align: center;
+
+                    &::before {
+                        
+                    }
+                    /*
+                    @media screen and (min-width: @screen-phone) {
+                        
+                    }*/
+
+                    &:hover, &:focus {
+                        text-shadow:1px 1px 0px black, 0 0 5px rgba(255, 249, 169, 0.678), 0 0 30px rgba(247, 255, 177, 0.3);
+                    }
+                }
+			}
+		}
+	}
+    .pkp_navigation_primary_row {
+        
+        background-color: @primary-nav-bg-color;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#472316+0,9e5a35+100 */
+background: rgb(71,35,22); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(71,35,22,1) 0%, rgba(158,90,53,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(71,35,22,1) 0%,rgba(158,90,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(71,35,22,1) 0%,rgba(158,90,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#472316', endColorstr='#9e5a35',GradientType=0 ); /* IE6-9 */
+    }
+    .pkp_navigation_primary > li > a {
+        color: @primary-nav-color;
+        text-shadow: @primary-nav-text-shadow;
+    }
+
+    .pkp_head_wrapper .pkp_search .search_prompt {
+        color: @primary-nav-color;
+    }
+    .pkp_head_wrapper .pkp_search .search_prompt:hover,
+    .pkp_head_wrapper .pkp_search .search_prompt:focus,
+    .pkp_navigation_primary > li > a:hover, 
+    .pkp_navigation_primary > li > a:focus {
+        border-color: @primary-nav-color;
+    }
+}
