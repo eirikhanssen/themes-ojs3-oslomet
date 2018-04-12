@@ -28,7 +28,7 @@
 <script>
 $( document ).ready(function() {ldelim}
     $('.galleys_links').append( $('<li><a class="obj_galley_link " title="bestillingsskjema for trykt utgave" href="https://nettskjema.uio.no/answer/skriftserien-bestilling.html">Bestill trykt utgave</a></li>') );
-{rdelim}});
+{rdelim});
 </script>
 	<div class="cmp_skip_to_content">
 		<a href="#pkp_content_main">{translate key="navigation.skip.main"}</a>
