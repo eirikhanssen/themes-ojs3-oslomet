@@ -24,7 +24,12 @@
 {if !$pageTitleTranslated}{translate|assign:"pageTitleTranslated" key=$pageTitle}{/if}
 {include file="frontend/components/headerHead.tpl"}
 <body class="pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if} no-borders" dir="{$currentLocaleLangDir|escape|default:"ltr"}">
-
+<!-- legg til lenke til bestillingsskjema når siden har lastet ferdig -->
+<script>
+$( document ).ready(function() {
+    $('.galleys_links').append( $('<li><a class="obj_galley_link " title="bestillingsskjema for trykt utgave" href="https://nettskjema.uio.no/answer/skriftserien-bestilling.html">Bestill trykt utgave</a></li>') );
+});
+</script>
 	<div class="cmp_skip_to_content">
 		<a href="#pkp_content_main">{translate key="navigation.skip.main"}</a>
 		<a href="#pkp_content_nav">{translate key="navigation.skip.nav"}</a>
