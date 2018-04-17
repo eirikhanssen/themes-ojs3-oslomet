@@ -122,3 +122,20 @@
 .pkp_search.is_open .search_prompt {
 	color: #007ab2 !important;
 }
+
+
+@media screen and (max-width: calc(@screen-desktop - 1px)) {
+	.pkp_head_wrapper .pkp_search {
+	  display:block;
+	  display:flex;
+	  flex-flow: row wrap;
+	}
+	
+	.pkp_head_wrapper .pkp_search > * {
+	  margin: .25em;
+	}
+	
+	.pkp_search [name="query"] {
+	flex-grow: 1;
+	}
+}
