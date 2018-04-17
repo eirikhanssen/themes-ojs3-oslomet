@@ -70,5 +70,10 @@
 {load_script context="frontend"}
 
 {call_hook name="Templates::Common::Footer::PageFooter"}
+<script type="text/javascript">
+$( document ).ready(function() {ldelim}
+    $('body').addClass('no-borders');
+{rdelim});
+</script>
 </body>
 </html>

@@ -9,12 +9,25 @@
  *
  */
 
- html .pkp_structure_sidebar > .pkp_block {
-    padding-top: 0;
+
+html .pkp_structure_sidebar {
+  background: whitesmoke;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 0px solid #ddd;
+}
+
+ html .pkp_structure_sidebar .pkp_block {
+    padding:1em;
+    margin-top: 1.5em;
     line-height: 1em;
-    /*@media (min-width: @screen-desktop) {
-        margin-top: calc(@breadcrumbs-height + @breadcrumbs-margin);
-    }*/
+    .title {
+        color: #555;
+        margin-bottom: .5em;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
 }
 
 .pkp_block.block_language {
