@@ -86,7 +86,7 @@
                     right:0;
                     bottom: 0;
                     
-                    @media (min-width: @medium-header-width) {
+                    @media screen and (min-width: @medium-header-width) {
                         background-image: url("@{img}/formakademisk-logo-2018-web.svg");
                         background-repeat: no-repeat;
                         background-position: left center;
@@ -95,6 +95,10 @@
                         min-height: 5rem;
                     }
                 
+                    @media screen and (max-width: @medium-header-width) {
+                        background-position: left 1em center;
+                    }
+
                     @media screen and (min-width: @screen-tablet) {
                         width: 728px;
                     }
