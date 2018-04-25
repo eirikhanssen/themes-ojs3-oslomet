@@ -17,7 +17,12 @@
 	{if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
 		{assign var="showingLogo" value=false}
 	{/if}
-    {assign var="titleHTML" value='<div class="headertext"><span class="abbrev">In</span>Formation</div>'}
+    {assign var="titleHTML" value='<div class="headertext">
+  <div class="header_information">
+    <span class="header_in">In</span><span class="header_formation">Formation</span>
+  </div>
+  <div class="header_njar">Nordic Journal of Art and Research</div>
+</div>'}
 {/strip}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
