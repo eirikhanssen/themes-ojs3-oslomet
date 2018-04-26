@@ -83,11 +83,11 @@
 				'$.pkp.controllers.MenuHandler');
 	{rdelim});
 </script>
-<ul id="navigationUser" class="pkp_nav_user pkp_nav_list" role="navigation" aria-label="{translate|escape key="common.navigation.user"}">
+<ul id="navigationUser" class="pkp_nav_user pkp_nav_list" role="navigation" aria-label="{translate|escape key="common.navigation.user"}" style="background-color:#002C40;">
 	{if $supportedLocales|@count}
-		<li class="languages" aria-haspopup="true" aria-expanded="false">
+		<li class="languages" aria-haspopup="true" aria-expanded="false" style="position:relative;margin-left:6.5em;">
 			<a href="#">
-				<span class="usernav_language">Language: </span>
+				<span class="usernav_language" style="color:#ffff66;white-space:pre;background-color:#002C40;position:absolute;right:100%;margin-right:.25em;padding-left:.5em;">Language: </span>
 				<span class="fa fa-globe"></span>
 				{$supportedLocales.$currentLocale}
 			</a>
