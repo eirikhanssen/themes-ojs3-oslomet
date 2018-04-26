@@ -87,6 +87,7 @@
 	{if $supportedLocales|@count}
 		<li class="languages" aria-haspopup="true" aria-expanded="false">
 			<a href="#">
+				<span class="usernav_language">Language: </span>
 				<span class="fa fa-globe"></span>
 				{$supportedLocales.$currentLocale}
 			</a>
