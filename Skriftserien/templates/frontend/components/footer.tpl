@@ -73,7 +73,11 @@
 <!-- legg til lenke til bestillingsskjema når siden har lastet ferdig -->
 <script>
 $( document ).ready(function() {ldelim}
-    $('.galleys_links').append( $('<li><a class="obj_galley_link " title="bestillingsskjema for trykt utgave" href="https://nettskjema.uio.no/answer/skriftserien-bestilling.html">Bestill trykt utgave</a></li>') );
+    var ed = $('.entry_details');
+		if (ed.length > 0 && ed.has('.item.galleys').length == 0) {ldelim}
+	ed.prepend('<div class="item galleys"><ul class="value galleys_links"></ul></div>');
+	{rdelim}
+    $('.galleys_links').prepend( $('<li><a class="obj_galley_link " title="bestillingsskjema for trykt utgave" href="https://nettskjema.uio.no/answer/skriftserien-bestilling.html">Bestill trykt utgave</a></li>') );
 {rdelim});
 </script>
 </body>
