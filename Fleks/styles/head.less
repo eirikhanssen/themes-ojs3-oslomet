@@ -12,6 +12,9 @@
 
 // Structural components of the header layout
 
+// head container widths
+
+// Page container widths
 .pkp_structure_head {
     
 
@@ -39,47 +42,115 @@
             // position: relative;
             z-index: 1;
 
-            &::before,
-            &::after {
-                @media (min-width: @medium-header-width){
-                    content: "";
-                    position: absolute;
-                    background-image: url("@{img}/header-bg.jpg");
-                    background-repeat: no-repeat;
+               &::before {
+                    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#013b84+0,014dab+100 */
+                    background: #013b84;
+                    /* Old browsers */
+                    background: -moz-linear-gradient(top, #013b84 0%, #014dab 100%);
+                    /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top, #013b84 0%,#014dab 100%);
+                    /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom, #013b84 0%,#014dab 100%);
+                    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013b84', endColorstr='#014dab',GradientType=0 );
+                    /* IE6-9 */
+                    z-index: -3;
                     background-position: left center;
-                    background-size: auto 100%;
-                    left:0;
-                    top:0;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    z-index: -1;
-                }
-                
+               }
             }
 
             &::after {
-                background-image: url("@{img}/header-bg-1px.jpg");
-                z-index: -2;
-                background-repeat: repeat-x;
+                content: "";
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                z-index: -1;
             }
 
 			.pkp_site_name {
+                display:flex;
+                //justify-content: center;
+                //align-items: center;
+                flex-grow:0;
+                min-height: 126px;
+                padding:0;
+                position: relative;
+                @media( min-width: @screen-tablet ) {
+                    width: @screen-tablet-container;
+                    padding: 0;
+                }
+
+                @media( min-width: @screen-desktop ) {
+                    width: @screen-desktop-container;
+                }
+
+                @media( min-width: @screen-lg-desktop ) {
+                    width: @screen-lg-desktop-container;
+                }
+                color: transparent;
+                text-align: center;
+                
                 font-family: Corbel, Arial, sans-serif;
                 font-weight: bold;
                 font-size: 3rem;
-                @media (min-width: @medium-header-width) {
-                    left: -9999px;
+                
+                height: 126px;
+                margin: auto;
+                z-index: 10;
+                background-image: url("/plugins/themes/Fleks/img/fleks-banner-text-as-path-290x126.svg");
+                background-position: left 15px center;
+                background-repeat: no-repeat;
+                        
+                @media (min-width: 600px) {
+                    background-image: url("/plugins/themes/Fleks/img/fleks-banner-text-as-path-290x126.svg"), url("/plugins/themes/Fleks/img/fleks-banner-globe-people.png");
+                    background-position: left 15px center, right center;
+                    background-repeat: no-repeat;
                 }
-									
-				& > a {
-                    /*background-color: rgba(255,255,255,0.5);
-                    @media (min-width: @medium-header-width) {
-						background-color: transparent;
-						text-align: left;
-                        padding:2rem 4rem;
-                        padding-right: 12rem;
-					}*/
+
+                @media (min-width: @screen-tablet) {
+                    background-image: url("/plugins/themes/Fleks/img/fleks-banner-text-as-path-290x126.svg"), url("/plugins/themes/Fleks/img/fleks-banner-globe-people.png");
+                    background-position: left center, right center;
+                    background-repeat: no-repeat;
+                }
+
+                @media (min-width: @screen-desktop) {
+                    background-image: url("/plugins/themes/Fleks/img/fleks-banner-text-as-path-650x126.svg"), url("/plugins/themes/Fleks/img/fleks-banner-globe-people.png");
+                }
+
+                @media (min-width: @screen-lg-desktop) {
+                    background-image: url("/plugins/themes/Fleks/img/fleks-banner-text-as-path-900x126.svg"), url("/plugins/themes/Fleks/img/fleks-banner-globe-people.png");
+                }
+
+                &::after {
+                    @media (min-width: 600px) {
+                        /*horisontal strip*/
+                        content: "";
+                        position: absolute;
+                        background-image: url("/plugins/themes/Fleks/img/fleks-banner-1px-strip.png");
+                        background-position: right center;
+                        margin-left: 0em;
+                        margin-right: 304px;
+                        left: 4.3em;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        display: block;
+                        height: 126px;
+                        z-index: 2;
+                        background-repeat: repeat-x;
+                    }
+                    @media (min-width: @screen-tablet) {
+                        left: 4em;
+                    }
+                }
+
+                & > a {
+                    color: transparent;
                 }
 			}
 		}
@@ -87,4 +158,3 @@
     .pkp_navigation_primary_row {
         background-color: @primary-nav-bg;
     }
-}
