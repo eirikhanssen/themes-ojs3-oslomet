@@ -20,6 +20,18 @@
 	.pkp_head_wrapper {
         position: relative;
         z-index: 1;
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#013b84+0,014dab+100 */
+        background: #013b84;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #013b84 0%, #014dab 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #013b84 0%,#014dab 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #013b84 0%,#014dab 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013b84', endColorstr='#014dab',GradientType=0 );
+        /* IE6-9 */
         
         &::before {
             content:"";
@@ -35,27 +47,14 @@
 
 		.pkp_site_name_wrapper {
             position: relative;
+            padding:0;
             // if this element is position:relative,
             // the background in pseudo element will fit height of this element (smaller)
             // if not, then background will fit height of parent element (larger)
             // position: relative;
             z-index: 1;
 
-            &::before {
-                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#013b84+0,014dab+100 */
-                background: #013b84;
-                /* Old browsers */
-                background: -moz-linear-gradient(top, #013b84 0%, #014dab 100%);
-                /* FF3.6-15 */
-                background: -webkit-linear-gradient(top, #013b84 0%,#014dab 100%);
-                /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(to bottom, #013b84 0%,#014dab 100%);
-                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013b84', endColorstr='#014dab',GradientType=0 );
-                /* IE6-9 */
-                z-index: -3;
-                background-position: left center;
-            }
+            &::before {}
         
             .pkp_site_name {
                 display:flex;
