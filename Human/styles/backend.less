@@ -1,0 +1,16 @@
+// OJS logo is not showing in backend for humanrer when logging in from humanrer.org
+// make a fix in that case
+.pkp_structure_head .pkp_site_name a.is_img[href="https://humanrer.org/index.php/index"] {
+    background-image: url('https://journals.hioa.no/templates/images/structure/logo.png');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  img[src="https://humanrer.org/templates/images/structure/logo.png"] {
+    width:0px;
+    height:0px;
+    display:none;
+    position: relative;
+    left: -1000px;
+  }
