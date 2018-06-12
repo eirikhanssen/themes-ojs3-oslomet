@@ -30,7 +30,8 @@ class HumanThemePlugin extends ThemePlugin {
         // Change the ID of this stylesheet slug to
         // `child-stylesheet`. This ensures that it
         // won't clash with the parent's stylesheet.
-        $this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
+		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
+		$this->modifyStyle('pkpLib', array('addLess' => array('styles/backend.less')));
 	}
 	
 	/**
