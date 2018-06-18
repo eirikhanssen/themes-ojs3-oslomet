@@ -55,12 +55,6 @@
 
 		</div><!-- columns -->
 
-		<!-- add some debug/demo buttons (will be removed later) -->
-		<fieldset class="gui-debug-buttons">
-			<legend>Experimental styles</legend>
-			<button id="no-borders-btn" onclick="(function(){ldelim} $('body').toggleClass('no-borders');{rdelim})();">toggle borders</button>		
-		</fieldset>
-
 	</footer>
 
 </div><!-- pkp_structure_footer_wrapper -->
