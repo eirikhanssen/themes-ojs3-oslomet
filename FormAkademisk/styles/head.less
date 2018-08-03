@@ -87,7 +87,7 @@
                     bottom: 0;
                     
                     @media screen and (min-width: @medium-header-width) {
-                        background-image: url("@{img}/formakademisk-logo-2018-web.svg");
+                        background-image: url("@{img}/formakademisk-logo-2018-english.svg");
                         background-repeat: no-repeat;
                         background-position: left 10px center;
                         background-size: auto 100%;
@@ -111,7 +111,8 @@
 
 			}
 		}
-	}
+    }
+
     .pkp_navigation_primary_row {
         background-color: @primary-nav-bg;
         color: @primary-nav-fg;
@@ -128,6 +129,10 @@
     .pkp_search .search_prompt {
         color: @primary-nav-fg;
     }
+}
+
+html[lang="nb-NO"] .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name a::after {
+	background-image: url("@{img}/formakademisk-logo-2018-norsk.svg");
 }
 
 .pkp_navigation_user_wrapper > .pkp_nav_list > .profile > a {
