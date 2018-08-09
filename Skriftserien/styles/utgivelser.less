@@ -1,0 +1,11 @@
+// styles for utgivelsesdata on abstract page
+
+dl.utgivelsesdata {display: flex; flex-flow: row wrap; line-height: 1.75em; background-color: whitesmoke; border: 1px solid #ccc; box-shadow: 5px 5px 0 #ddd;}
+.utgivelsesdata dt,dd {padding: .25rem 1rem;}
+.utgivelsesdata dt {width: 30%;margin:0; font-weight:bold;}
+.utgivelsesdata dd {width:70%;margin:0;}
+
+.utgivelsesdata dt:nth-of-type(even),
+.utgivelsesdata dt:nth-of-type(even) + dd {
+  background-color: white;
+}
