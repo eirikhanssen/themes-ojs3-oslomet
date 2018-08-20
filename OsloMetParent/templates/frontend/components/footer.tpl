@@ -67,6 +67,11 @@
 <script type="text/javascript">
 $( document ).ready(function() {ldelim}
     $('body').addClass('no-borders');
+	// workaround for when OJS strips needed target attribute
+	// in the back-end: add the class="_top" on anchors needing the target attribute with the value "_top"
+	// This line adds target="_top" atteribute to anchors with class="_top".
+	// needed for some links to break out of iframe or cloaked forwarding
+	$('a._top').attr('target','_top'); 
 {rdelim});
 </script>
 </body>
