@@ -26,7 +26,7 @@
 	<div class="title_sv">
 		<span class="title-techne">Techne</span>
 		<span class="title-series">serien</span>
-		<span class="title-research">Forskning i slöydpedagogik och slöydvetenskap</span>
+		<span class="title-research">Forskning i slöjdpedagogik och slöjdvetenskap</span>
 	</div>
 </div>'}
 {/strip}

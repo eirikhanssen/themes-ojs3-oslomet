@@ -13,8 +13,8 @@
 <version>
 	<application>OsloMetParent</application>
 	<type>plugins.themes</type>
-	<release>3.1.1.67</release>
-	<date>2018-08-20</date>
+	<release>3.1.1.68</release>
+	<date>2018-08-23</date>
 	<lazy-load>0</lazy-load>
 	<class>OsloMetParentThemePlugin</class>
 </version>
