@@ -17,7 +17,7 @@
 	{if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
 		{assign var="showingLogo" value=false}
 	{/if}
-    {assign var="titleHTML" value='<div class="headertext"><span class="HRER"><span class="HR"></span><span class="ER"></span></span><span class="hrer-title">Human Rights Education Review</span></div>'}
+    {assign var="titleHTML" value='<div class="headertext">HRER – Human Rights Education Review</div>'}
 {/strip}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
@@ -45,7 +45,7 @@
 						<div class="pkp_site_name">
 					{/if}
 						{url|assign:"homeUrl" page="index" router=$smarty.const.ROUTE_PAGE}
-							<a href="{$homeUrl}" class="is_text">{$titleHTML}</a>
+							<a href="{$homeUrl}" class="is_text journal_home_url">{$titleHTML}</a>
 					{if $requestedOp == 'index'}
 						</h1>
 					{else}
