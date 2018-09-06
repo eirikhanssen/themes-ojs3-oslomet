@@ -24,7 +24,7 @@
  * </div>
  *
  * All styling should be applied by class name, so that titles may use heading
- * elements (eg, <h3>) or any element required.
+ * elements (eg, <h2>) or any element required.
  *
  * <!-- Example: component with multiple title/value combinations -->
  * <div class="item">
@@ -145,7 +145,7 @@
 			{* Abstract *}
 			{if $article->getLocalizedAbstract()}
 				<div class="item abstract">
-					<h3 class="label">{translate key="article.abstract"}</h3>
+					<h2 class="label">{translate key="article.abstract"}</h2>
 					{$article->getLocalizedAbstract()|strip_unsafe_html}
 				</div>
 			{/if}
@@ -192,9 +192,9 @@
 			{* References *}
 			{if $article->getCitations()}
 				<div class="item references">
-					<h3 class="label">
+					<h2 class="label">
 						{translate key="submission.citations"}
-					</h3>
+					</h2>
 					<div class="value">
 						{$article->getCitations()|nl2br}
 					</div>
