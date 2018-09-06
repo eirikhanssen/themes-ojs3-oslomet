@@ -30,6 +30,8 @@
             // if not, then background will fit height of parent element (larger)
             // position: relative;
             z-index: 1;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
             @media (min-width: @medium-header-width) {
                 background-image: url("@{img}/hrer-left-corner.png"), url("@{img}/hrer-right-corner.png");
                 background-repeat: no-repeat, no-repeat;
@@ -63,8 +65,14 @@
                 height:100%;
                 width:100%;
                 padding:0;
+                position: relative;
+                padding-top: .5rem;
+                padding-bottom: .5rem;
                 &:hover, &:focus {
                     text-shadow: 1px 1px 0 black, 0 0 .25em #475cd2, 0 0 .5em rgba(255,255,255,0.5);
+                }
+                &::after{
+                    content:"";
                 }
                 
                 }
