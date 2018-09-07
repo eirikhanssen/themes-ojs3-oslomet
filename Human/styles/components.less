@@ -1,0 +1,63 @@
+/**
+ * @file styles/components.less
+ *
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Reusable components
+ */
+
+
+// Button
+.cmp_button {
+	background: #eee;
+	border: @form-border;
+	border-top-color: #bbb;
+	border-radius: @radius;
+	box-shadow: inset 0 -1em 1em rgba(0, 0, 0, 0.1);
+	color: @primary;
+	&:hover,
+	&:focus {
+		box-shadow: inset 0 1em 1em rgba(0, 0, 0, 0.1);
+	}
+}
+
+// Wire button
+.cmp_button_wire {
+	background: #fff;
+	border: 1px solid @primary;
+	border-radius: @radius;
+	color: @primary;
+
+	&:hover,
+	&:focus {
+		background: @primary;
+		color: #fff;
+	}
+}
+
+// Add an icon to the button
+.cmp_button_icon( @icon ) {
+
+	&:after {
+		box-shadow: inset 0 -1em 1em rgba(0, 0, 0, 0.2);
+		color: #fff;
+	}
+
+	&:hover:after,
+	&:focus:after {
+		box-shadow: inset 0 1em 1em rgba(0, 0, 0, 0.2);
+		background: @primary-lift;
+	}
+}
+
+
+// Text button with an icon
+.cmp_button_text( @icon ) {
+	color: @primary;
+	&:hover,
+	&:focus {
+		color: @primary-lift;
+	}
+}
