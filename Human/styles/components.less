@@ -25,16 +25,19 @@
 
 // Wire button
 .cmp_button_wire {
-	background: #fff;
+	background: @primary;
 	border: 1px solid @primary;
 	border-radius: @radius;
-	color: @primary;
+	color: white;
 
 	&:hover,
 	&:focus {
-		background: @primary;
+		background: @btn-hover-focus;
 		color: #fff;
-	}
+    }
+    &:active {
+        background: @btn-active;
+    }
 }
 
 // Add an icon to the button
