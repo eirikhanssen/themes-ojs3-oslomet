@@ -30,16 +30,6 @@
 	<footer class="pkp_structure_footer">
 		<div class="columns">
 
-			<div class="column">
-				<h4>Driftet av</h4>
-					<p>
-						<a id="hostedByOsloMetLSB" href="http://www.hioa.no/LSB">
-							<img class="hioaFooterLogo" src="https://journals.hioa.no/public/site/images/hioalogo-bars-black-on-transparent-bg-80x45.png" alt="">
-							<span><strong>Universitetsbiblioteket&nbsp;OsloMet</strong>
-						</a>
-					</p>
-			</div><!-- column -->
-
 			{if $pageFooter}
 			<div class="column">
 				<div class="pkp_footer_content">
@@ -48,9 +38,24 @@
 			</div><!-- column -->
 			{/if}
 
-			<div class="column">
-				<h4>Personvernerklæring</h4>
-					<p><a class="no_NO" href="https://journals.hioa.no/help/cookies-no_NO.html">Om informasjonskapsler på journals.hioa.no</a></p>
+			<div class="column nb_NO-only">
+				<h4>Driftet av</h4>
+					<p class="oslometlogo">
+						<a id="hostedByOsloMetUL" href="http://www.hioa.no/LSB">
+							<span><strong>Universitetsbiblioteket&nbsp;OsloMet</strong>
+						</a>
+					</p>
+					<p><a href="https://journals.hioa.no/help/cookies-no_NO.html">Om informasjonskapsler på journals.hioa.no</a></p>
+			</div><!-- column -->
+
+			<div class="column en_US-only">
+				<h4>Hosted by</h4>
+					<p class="oslometlogo">
+						<a id="hostedByOsloMetUL" href="http://www.hioa.no/eng/Learning-Centre-and-Library">
+							<span><strong>OsloMet&nbsp;University Library</strong>
+						</a>
+					</p>
+					<p><a href="https://journals.hioa.no/help/cookies-en_US.html">About cookies at journals.hioa.no</a></p>
 			</div><!-- column -->
 
 		</div><!-- columns -->
