@@ -1,0 +1,4 @@
+<!-- to be pasted in settings > website > Page Footer (source view): -->
+<h4>Publisher</h4>
+<p><a href="https://www.usn.no/english/" target="_blank" rel="noopener"> <img style="display: block; height: 7rem; width: auto; position: relative; left: -1.8rem;" src="/plugins/themes/Human/svg/USN_logo_EN-white.svg" /> University of South-Eastern Norway</a><br /> Mailbox 235 - 3603 Kongsberg</p>
+<p><strong>Place of Publication</strong><br /> <a href="https://www.usn.no/english/" target="_blank" rel="noopener">Campus Drammen Papirbredden - Drammen kunnskapspark</a><br /> Grønland 58 - 3045 Drammen</p>
