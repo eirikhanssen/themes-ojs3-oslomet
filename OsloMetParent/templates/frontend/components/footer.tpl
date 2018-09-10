@@ -38,7 +38,7 @@
 			</div><!-- column -->
 			{/if}
 
-			<div class="column nb_NO-only">
+			<div class="column nb-NO-only">
 				<h4>Driftet av</h4>
 					<p class="oslometlogo">
 						<a id="hostedByOsloMetUL" href="http://www.hioa.no/LSB">
@@ -48,7 +48,7 @@
 					<p><a href="https://journals.hioa.no/help/cookies-no_NO.html">Om informasjonskapsler på journals.hioa.no</a></p>
 			</div><!-- column -->
 
-			<div class="column en_US-only">
+			<div class="column en-US-only">
 				<h4>Hosted by</h4>
 					<p class="oslometlogo">
 						<a id="hostedByOsloMetUL" href="http://www.hioa.no/eng/Learning-Centre-and-Library">
