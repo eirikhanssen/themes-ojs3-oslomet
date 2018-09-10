@@ -32,8 +32,8 @@
 
 	&:hover,
 	&:focus {
-		background: @btn-hover-focus;
-		color: #fff;
+		background: @btn-hover-focus-bg;
+		color: @btn-hover-focus-fg;
     }
     &:active {
         background: @btn-active-bg;
@@ -45,22 +45,22 @@
 
 	&:after {
 		box-shadow: inset 0 -1em 1em rgba(0, 0, 0, 0.2);
-		color: #fff;
+		color: @primary-fg;
 	}
 
 	&:hover:after,
 	&:focus:after {
 		box-shadow: inset 0 1em 1em rgba(0, 0, 0, 0.2);
-		background: @primary-lift;
+		background: @primary-bg;
 	}
 }
 
 
 // Text button with an icon
 .cmp_button_text( @icon ) {
-	color: @primary;
+	color: @primary-fg;
 	&:hover,
 	&:focus {
-		color: @primary-lift;
+		color: @primary-hover-focus-fg;
 	}
 }
