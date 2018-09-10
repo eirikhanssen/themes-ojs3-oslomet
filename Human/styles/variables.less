@@ -15,15 +15,28 @@
 // font loading
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @font: 'Open Sans', sans-serif;
+
 // colors
+@bg: #f4f4f4;
+@content-bg: white;
+@index-list-item-bg: #f4f4f4;
+
 @bg-head: #1d3662;
 @head-titlecolor: white;
 @head-shadow-color: black;
 @head-hover-bg-color: #1D4081;
 @hrer-vertical-border-color: #475cd2;
 @primary-nav-bg: #142b52;
-// Primary "anchor" color for links
+
+// Colors for links and buttons
+
 //@primary: #485cd3;
 @primary: #1d4081;
-@btn-hover-focus:        #2a2e36;
-@btn-active:               #555;      
+@primary-bg: @primary;
+@primary-fg: white;
+@primary-hover-focus-bg: #2a2e36;
+@primary-hover-focus-fg: @primary-fg;
+@btn-hover-focus-bg: @primary-hover-focus-bg;
+@btn-hover-focus-fg: @primary-hover-focus-fg;
+
+@btn-active-bg:               #555;
