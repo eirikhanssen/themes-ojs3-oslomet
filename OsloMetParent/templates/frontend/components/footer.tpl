@@ -40,8 +40,8 @@
 
 			<div class="column nb-NO-only">
 				<h4>Driftet av</h4>
-					<p class="oslometlogo">
-						<a href="http://www.hioa.no/LSB">
+					<p>
+						<a class="oslometlogo" href="http://www.hioa.no/LSB">
 							<span><strong>Universitetsbiblioteket&nbsp;OsloMet</strong>
 						</a>
 					</p>
@@ -50,8 +50,8 @@
 
 			<div class="column en-US-only">
 				<h4>Hosted by</h4>
-					<p class="oslometlogo">
-						<a href="http://www.hioa.no/eng/Learning-Centre-and-Library">
+					<p>
+						<a class="oslometlogo" href="http://www.hioa.no/eng/Learning-Centre-and-Library">
 							<span><strong>OsloMet&nbsp;University Library</strong>
 						</a>
 					</p>
