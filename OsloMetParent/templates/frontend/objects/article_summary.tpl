@@ -29,7 +29,7 @@
 		</div>
 	{/if}
 
-	<div class="title">
+	<h3 class="title">
 		<a {if $journal}href="{url journal=$journal->getPath() page="article" op="view" path=$articlePath}"{else}href="{url page="article" op="view" path=$articlePath}"{/if}>
 			{$article->getLocalizedTitle()|strip_unsafe_html}
 			{if $article->getLocalizedSubtitle()}
@@ -38,7 +38,7 @@
 				</span>
 			{/if}
 		</a>
-	</div>
+	</h3>
 
 	{if $showAuthor || $article->getPages() || ($article->getDatePublished() && $showDatePublished)}
 	<div class="meta">
