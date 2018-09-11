@@ -17,7 +17,7 @@
 	{if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
 		{assign var="showingLogo" value=false}
 	{/if}
-    {assign var="titleHTML" value='<div class="headertext">HRER – Human Rights Education Review</div>'}
+    {assign var="titleHTML" value='<span class="headertext">HRER – Human Rights Education Review</span>'}
 {/strip}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
