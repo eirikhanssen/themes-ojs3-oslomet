@@ -42,7 +42,7 @@
 				<h4>Driftet av</h4>
 					<p>
 						<a class="oslometlogo" href="http://www.hioa.no/LSB">
-							<span><strong>Universitetsbiblioteket&nbsp;OsloMet</strong>
+							<strong>Universitetsbiblioteket&nbsp;OsloMet</strong>
 						</a>
 					</p>
 					<p><a href="https://journals.hioa.no/help/cookies-no_NO.html">Om informasjonskapsler på journals.hioa.no</a></p>
@@ -52,7 +52,7 @@
 				<h4>Hosted by</h4>
 					<p>
 						<a class="oslometlogo" href="http://www.hioa.no/eng/Learning-Centre-and-Library">
-							<span><strong>OsloMet&nbsp;University Library</strong>
+							<strong>OsloMet&nbsp;University Library</strong>
 						</a>
 					</p>
 					<p><a href="https://journals.hioa.no/help/cookies-en_US.html">About cookies at journals.hioa.no</a></p>
