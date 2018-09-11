@@ -11,12 +11,12 @@
 
 // Button
 .cmp_button {
-	background: #eee;
+	background: @button-bg;
 	border: @form-border;
-	border-top-color: #bbb;
+	border-top-color: @button-bg;
 	border-radius: @radius;
 	box-shadow: inset 0 -1em 1em rgba(0, 0, 0, 0.1);
-	color: @primary;
+	color: @button-fg;
 	&:hover,
 	&:focus {
 		box-shadow: inset 0 1em 1em rgba(0, 0, 0, 0.1);
@@ -26,19 +26,19 @@
 // Wire button
 .cmp_button_wire,
 .block_make_submission .block_make_submission_link.block_make_submission_link {
-	background: @primary;
-	border: 1px solid @primary;
+	background: @button-bg;
+	border: 1px solid @button-bg;
 	border-radius: @radius;
-	color: white;
+	color: @button-fg;
 
 	&:hover,
 	&:focus {
 		text-decoration: none;
-		background: @btn-hover-focus-bg;
-		color: @btn-hover-focus-fg;
+		background: @@button-hover-focus-bg;
+		color: @button-hover-focus-fg;
     }
     &:active {
-        background: @btn-active-bg;
+        background: @button-active-bg;
     }
 }
 
@@ -52,13 +52,13 @@
 
 	&:after {
 		box-shadow: inset 0 -1em 1em rgba(0, 0, 0, 0.2);
-		color: @primary-fg;
+		color: @button-hover-focus-fg;
 	}
 
 	&:hover:after,
 	&:focus:after {
 		box-shadow: inset 0 1em 1em rgba(0, 0, 0, 0.2);
-		background: @primary-bg;
+		background: @button-hover-focus-bg;
 	}
 }
 
@@ -68,6 +68,6 @@
 	color: @primary-fg;
 	&:hover,
 	&:focus {
-		color: @primary-hover-focus-fg;
+		color: @button-hover-focus-fg;
 	}
 }
