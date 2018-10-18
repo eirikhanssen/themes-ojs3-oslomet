@@ -18,11 +18,9 @@
 		{assign var="showingLogo" value=false}
 	{/if}
     {assign var="titleHTML" value='<div class="headertext">
-  <div class="header_information">
-    <span class="header_in">In</span><span class="header_formation">Formation</span>
-  </div>
-  <div class="header_njar">Nordic Journal of Art and Research</div>
-</div>'}
+  <div class="header_njar"><span class="header_njof">Nordic Journal of </span><span class="header_anr">Art &amp; Research</span></div>
+</div>
+'}
 {/strip}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
