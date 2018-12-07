@@ -1,28 +1,52 @@
 /* Backend overrides */
 
-// Style the new custom "Language: " text before language selection
-.usernav_language {
-    color: #ffff66;
-    white-space:pre;
-    background-color: @bg-anchor;
-    position:absolute;
-    right:100%;
-    margin-right:.25em;
-    padding-left: .5em;
+/* Make language selection in the backend more obvious by prepending 'Language: before the language select' */
+#navigationUser .languages a .fa-globe::after {
+    content:" Language: ";
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:1.1em;
+}
+/* fix the journal selection menu to display the whole name of the journal and tweak display */
+
+html .pkp_nav_context {
+    max-width: unset;
+    min-width: 32rem;
 }
 
-.pkp_navigation_user #navigationUser {
-    background-color: @bg-anchor;
+.pkp_contexts.pkp_contexts a {
+    font-size:.9em;
 }
 
-#navigationUser .languages {
-    position:relative;
-    margin-left: 6.5em;
+html .pkp_nav_context .pkp_contexts a {
+    display: block;
+    text-overflow: unset;
+    overflow-x: unset;
+    white-space: normal;
+    padding:.5em 1em;
+}
+html .pkp_nav_context [aria-expanded="true"] .pkp_contexts {
+    box-shadow: 1px 1px 0px black;
+}
+a.pkp_current_context.pkp_current_context.pkp_current_context {
+   color: #fcff83;
+    font-size:1.1em;
 }
 
-a {
-    color: #0072a7;
+html .pkp_nav_list ul { width: unset; }
+
+html .pkp_nav_context .pkp_contexts li {
+    border-top: 1px solid rgba(0,0,0,0.3);
 }
-.ui-tabs-nav .ui-state-active a {
-    color: #666;
+
+.pkp_nav_list.pkp_nav_list a {
+    color: white;
+}
+
+.pkp_nav_user.pkp_nav_user a {
+    background-color: #002c40;
+}
+
+#navigationContextMenu [aria-expanded="true"] .pkp_contexts {
+    max-width:unset;
 }
