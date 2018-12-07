@@ -27,7 +27,7 @@ class OsloMetParentThemePlugin extends ThemePlugin {
         // Use the parent theme's unique plugin slug
 		$this->setParent('defaultthemeplugin');
 
-		$this->modifyStyle('pkpLib', array('addLess' => array('styles/backend.less')));
+		$this->addStyle('backend-mod', 'styles/backend.less', array( 'contexts' => 'backend' ));
 
         // Change the ID of this stylesheet slug to
         // `child-stylesheet`. This ensures that it
