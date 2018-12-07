@@ -1,0 +1,138 @@
+/**
+ * @file plugins/themes/NJAR/styles/head.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+// Structural components of the header layout
+
+.pkp_structure_head {
+    background-color: @head-bg-color;
+    
+	.pkp_head_wrapper {
+        position: relative;
+        z-index: 1;
+        /*
+        
+        background-image: url("@{img}/header-bg.jpg");
+                background-position: center center;
+                background-size: auto 100%;
+                background-repeat: repeat-x;
+                */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+74,dddfe3+88,dddfe3+88,f5f6f6+100 */
+background: #f5f6f6; /* Old browsers */
+background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 74%, #dddfe3 88%, #dddfe3 88%, #f5f6f6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f5f6f6 0%,#dbdce2 21%,#b8bac6 74%,#dddfe3 88%,#dddfe3 88%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 74%,#dddfe3 88%,#dddfe3 88%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+		.pkp_site_name_wrapper {
+            
+            color: @head-color;
+            
+                        
+            // if this element is position:relative,
+            // the background in pseudo element will fit height of this element (smaller)
+            // if not, then background will fit height of parent element (larger)
+            // position: relative;
+            
+            &::before,
+            &::after {
+                
+            }
+            &::after {
+                
+            }
+
+			.pkp_site_name {
+                font-family: Corbel, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 3rem;
+                
+                
+                .headertext {
+                    font-family: Corbel, Arial, sans-serif;
+                    width: 100%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: flex-start;
+                    font-size: 1.5em;
+                    @media screen and (min-width: @screen-phone){
+                        font-size: 2em;    
+                    }
+                    
+                    line-height: 1em;
+                    .header_in {
+                        color: @highlight-color;
+                        text-shadow: 1px 1px 0px black, 0 0 .2em #111;
+                    }
+                    .header_njar {
+                        font-size: .75em;
+                    }
+                }
+
+                
+
+				& > a {
+                    color: @head-color;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: stretch;
+                    justify-content: flex-start;
+                    /*text-shadow:1px 1px 0px black;*/
+                    position: relative;
+                    z-index: 1;
+                    text-align: left;
+                    &::before {
+                        
+                    }
+                    /*
+                    @media screen and (min-width: @screen-phone) {
+                        
+                    }*/
+
+                    &:hover, &:focus {
+                        /*text-shadow:1px 1px 0px black, 0 0 5px rgba(255, 249, 169, 0.678), 0 0 30px rgba(247, 255, 177, 0.3);*/
+                    }
+                }
+			}
+		}
+	}
+    .pkp_navigation_primary_row {
+        
+        background-color: @primary-nav-bg-color;
+    }
+    .pkp_navigation_primary > li > a {
+        color: @primary-nav-color;
+        text-shadow: @primary-nav-text-shadow;
+    }
+
+    .pkp_head_wrapper .pkp_search .search_prompt {
+        color: @primary-nav-color;
+    }
+    .pkp_head_wrapper .pkp_search .search_prompt:hover,
+    .pkp_head_wrapper .pkp_search .search_prompt:focus,
+    .pkp_navigation_primary > li > a:hover, 
+    .pkp_navigation_primary > li > a:focus {
+        border-color: @primary-nav-color;
+    }
+}
+
+.header_njar {
+    display: flex;
+    flex-flow: column wrap;
+    line-height:1.2em;
+}
+.header_njof {
+    font-weight: normal;
+    font-size: .75em;
+}
+
+.header_anr {
+    text-transform: uppercase;
+}
