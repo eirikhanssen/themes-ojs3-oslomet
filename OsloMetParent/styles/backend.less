@@ -38,7 +38,7 @@ html .pkp_nav_context [aria-expanded="true"] .pkp_contexts {
     box-shadow: 1px 1px 0px black;
 }
 a.pkp_current_context.pkp_current_context.pkp_current_context {
-    font-size:1em;
+    //font-size:1em;
 }
 
 html .pkp_nav_list ul { width: unset; }
@@ -50,8 +50,15 @@ html .pkp_nav_context .pkp_contexts li {
 .pkp_nav_list.pkp_nav_list a {
     color: white;
 }
+.pkp_nav_user.pkp_nav_user li a {
+    background-color: #002c40;
+}
 .pkp_nav_user.pkp_nav_user li a:hover {
     background-color: #004f73;
+}
+a:focus {
+    background:orange !important;
+    color: black !important;
 }
 
 .pkp_nav_user.pkp_nav_user li ul a:hover {
@@ -60,4 +67,8 @@ html .pkp_nav_context .pkp_contexts li {
 
 #navigationContextMenu [aria-expanded="true"] .pkp_contexts {
     max-width:unset;
+}
+
+#navigationPrimary ul li {
+    white-space:pre;
 }
