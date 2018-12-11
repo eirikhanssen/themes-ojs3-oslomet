@@ -30,7 +30,7 @@
 					{capture assign="url"}{url journal=$journal->getPath()}{/capture}
 					{assign var="thumb" value=$journal->getLocalizedSetting('journalThumbnail')}
 					{assign var="description" value=$journal->getLocalizedDescription()}
-					<li{if $thumb} class="has_thumb"{/if}>
+					<li>{if $thumb} class="has_thumb"{/if}>
 						{if $thumb}
 							{assign var="altText" value=$journal->getLocalizedSetting('journalThumbnailAltText')}
 							<div class="thumb">
