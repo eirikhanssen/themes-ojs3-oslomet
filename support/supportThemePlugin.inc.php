@@ -30,8 +30,8 @@ class supportThemePlugin extends ThemePlugin {
         // Change the ID of this stylesheet slug to
         // `child-stylesheet`. This ensures that it
         // won't clash with the parent's stylesheet.
-        $this->modifyStyle('child-stylesheet', array('addLess' => array('styles/index.less')));
-        $this->modifyStyle('child-stylesheet', array('addLess' => array('styles/lib.less'))); // load lib styles
+        $this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
+        $this->modifyStyle('stylesheet', array('addLess' => array('styles/lib.less'))); // load lib styles
 
 	// Load lightbox script to display image series
         $this->addScript('default', 'lib/lightbox2/js/lightbox.js');
