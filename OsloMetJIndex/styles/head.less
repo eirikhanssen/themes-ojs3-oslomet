@@ -20,22 +20,23 @@
         background-repeat: no-repeat;
         background-position: right center;
         background-size: auto 100%;
-        position: relative;
+        background-position: relative;
 
 		.pkp_site_name_wrapper {
 
 			.pkp_site_name {
-                text-shadow: 1px 1px 0px @head-shadow-color, 1px 1px 5px @head-shadow-color;
+                
 				& > a {
+                    font-size: 2rem;
                     &:hover, &:focus {
-						color: white;
+                        color: white;
 					}
                     @media (min-width: @medium-header-width) {
-                        padding-left: calc(~"4rem +" @header-min-height);
-                        background-image: url("@{img}/hioalogo-en-semi-transp113x113.png");
+                        padding-left: calc(4rem + 5rem);
+                        background-image: url(/plugins/themes/OsloMetParent/svg/OsloMet-logo-white.svg);
                         background-repeat: no-repeat;
-                        background-position: 1.5rem center;
-                        background-size: auto calc(~"100% - 0rem");
+                        background-position: .5rem center;
+                        background-size: auto calc(100% - 0rem);
                     }
 				}
 			}
