@@ -26,32 +26,7 @@
             // position: relative;
             
             
-            &::before,
-            &::after {
-                /*
-                content: "";
-                    position: absolute;
-                    background-image: url("@{img}/header-bg.jpg");
-                    background-color: #fbfbfb;
-                    background-repeat: no-repeat;
-                    background-position: -20rem center;
-                    background-size: auto 100%;
-                    left:0;
-                    top:0;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    z-index: -2;
-
-                    @media (min-width: @medium-header-width) {
-                        background-position: right center;
-                    }
-            */
-            }
-            &::after {
-                //background-color: @bg-head;
-                //z-index: -1;
-            }
+            &::after { }
 
 			.pkp_site_name {
                 font-family: Corbel, Arial, sans-serif;
@@ -64,38 +39,18 @@
                     flex-flow: row nowrap;
                     align-items: stretch;
                     justify-content: flex-start;
-                    //padding-top: 1rem;
-                    //padding-bottom: 1rem;
                     position: relative;
                     z-index: 1;
-                    
-                    
+                    font-size: 2rem;
                     text-align: center;
 
-                    &::before {
-                        @media screen and (min-width: @screen-phone) {
-                            content:"";
-                            position: absolute;
-                            left: 267px;
-                            height: 50%;
-                            width: 20px;
-                            background-color: 3px solid red;
-                            top: 0;
-                            bottom:0;
-                            margin:auto;
-                            display: block;
-                            z-index: 10;
-                            border-left: 3px solid @head-color;
-                        }
-                    }
-
-                    @media screen and (min-width: @screen-phone) {
+                    @media screen and (min-width: @screen-tablet) {
                         text-align: left;
-                        padding-left: 290px;
-                        background-image: url("@{img}/hioalogo-web-black.png");
+                        background-image: url("/plugins/themes/OsloMetParent/svg/OsloMet-logo-black.svg");
+                        background-position: left 1rem center;
                         background-repeat: no-repeat;
-                        background-position: 1rem center;
-                        background-size: 227px auto;
+                        background-size: 6rem auto;
+                        padding-left: 8rem;
                     }
 
                     &:hover, &:focus {
