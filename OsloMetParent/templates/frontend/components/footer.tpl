@@ -41,7 +41,7 @@
 			<div class="column nb-NO-only">
 				<h4>Driftet av</h4>
 					<p>
-						<a class="oslometlogo" href="http://www.hioa.no/LSB">
+						<a class="oslometlogo" href="https://oslomet.no/ub">
 							<strong>Universitetsbiblioteket&nbsp;OsloMet</strong>
 						</a>
 					</p>
@@ -51,7 +51,7 @@
 			<div class="column en-US-only">
 				<h4>Hosted by</h4>
 					<p>
-						<a class="oslometlogo" href="http://www.hioa.no/eng/Learning-Centre-and-Library">
+						<a class="oslometlogo" href="https://oslomet.no/ub">
 							<strong>OsloMet&nbsp;University Library</strong>
 						</a>
 					</p>
