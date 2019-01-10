@@ -16,12 +16,13 @@
     background-color: @bg-head;
 
 	.pkp_head_wrapper {
-        background-image: url("@{img}/open-access-transp-bg-609x113_without_OA-icon.png");
-        background-repeat: no-repeat;
-        background-position: right center;
-        background-size: auto 100%;
-        background-position: relative;
-
+        @media (min-width: @screen-desktop) {
+            background-image: url("@{img}/open-access-transp-bg-609x113_without_OA-icon.png");
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: auto 100%;
+            background-position: relative;
+        }
 		.pkp_site_name_wrapper {
 
 			.pkp_site_name {
