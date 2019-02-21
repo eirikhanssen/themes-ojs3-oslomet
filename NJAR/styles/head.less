@@ -26,11 +26,8 @@
                 background-repeat: repeat-x;
                 */
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+74,dddfe3+88,dddfe3+88,f5f6f6+100 */
-background: #f5f6f6; /* Old browsers */
-background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 74%, #dddfe3 88%, #dddfe3 88%, #f5f6f6 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #f5f6f6 0%,#dbdce2 21%,#b8bac6 74%,#dddfe3 88%,#dddfe3 88%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 74%,#dddfe3 88%,#dddfe3 88%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+
+        background: white;
 		.pkp_site_name_wrapper {
             
             color: @head-color;
@@ -97,19 +94,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', end
                     }*/
 
                     &:hover, &:focus {
-                        /*text-shadow:1px 1px 0px black, 0 0 5px rgba(255, 249, 169, 0.678), 0 0 30px rgba(247, 255, 177, 0.3);*/
+
                     }
                 }
 			}
 		}
 	}
     .pkp_navigation_primary_row {
-        
+        border-top: 2px solid @primary-nav-color;
         background-color: @primary-nav-bg-color;
     }
     .pkp_navigation_primary > li > a {
         color: @primary-nav-color;
         text-shadow: @primary-nav-text-shadow;
+    }
+
+    .pkp_navigation_primary > li > a:hover,
+    .pkp_navigation_primary > li > a:focus {
+        background-color: orange;
     }
 
     .pkp_head_wrapper .pkp_search .search_prompt {
@@ -122,7 +124,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', end
         border-color: @primary-nav-color;
     }
 }
-
+/*
 .header_njar {
     display: flex;
     flex-flow: column wrap;
@@ -135,4 +137,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', end
 
 .header_anr {
     text-transform: uppercase;
+}*/
+
+@media screen {
+    .header_njar span {
+        visibility:hidden;
+    }
+    .pkp_site_name_wrapper {
+        background-image: url(/plugins/themes/NJAR/svg/ar-logo-rgb-sort.svg);
+        background-position: left center;
+        background-repeat:no-repeat;
+    }
+}
+
+@media screen and (min-width: 50em) {
+	.pkp_site_name_wrapper {
+        background-image: url(/plugins/themes/NJAR/svg/ar-logo-rgb-sort.svg), url(/plugins/themes/NJAR/svg/ar-tittelhode-grafisk-element1.svg);
+        background-position: left center, right -26em center;
+        background-repeat:no-repeat, no-repeat;
+    }
+}
+
+@media screen and (min-width: 80em) {
+	.pkp_site_name_wrapper {
+        background-image: url(/plugins/themes/NJAR/svg/ar-logo-rgb-sort.svg), url(/plugins/themes/NJAR/svg/ar-tittelhode-grafisk-element1.svg);
+        background-position: left center, right center;
+        background-repeat:no-repeat, no-repeat;
+    }
 }
