@@ -13,8 +13,8 @@
 <version>
 	<application>NJAR</application>
 	<type>plugins.themes</type>
-	<release>3.1.0.3</release>
-	<date>2019-02-23</date>
+	<release>3.1.0.5</release>
+	<date>2019-02-22</date>
 	<lazy-load>0</lazy-load>
 	<class>NJARThemePlugin</class>
 </version>
