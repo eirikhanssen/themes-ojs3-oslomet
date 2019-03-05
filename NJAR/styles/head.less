@@ -169,3 +169,129 @@
         background-repeat:no-repeat, no-repeat;
     }
 }
+
+
+
+
+
+
+
+/* EXPERIMENTAL STUFF*/
+
+
+
+
+
+
+
+
+.pkp_structure_head .pkp_navigation_primary_row.pkp_navigation_primary_row {
+	border: 1px solid gray;
+	border-left: none;
+	border-right: none;
+}
+
+.pkp_site_name_wrapper {
+	
+	height: 10rem;
+}
+
+#pkp_content_main{
+	
+	position: relative;
+	margin: auto;
+
+}
+
+#pkp_content_main::after{
+    content:"";
+	position: absolute;
+	top:-15rem;
+	left: 0;
+	width: 4em;
+	height: 10rem;
+	display: block;
+	background-color: magenta;
+	z-index:10;
+	visibility: visible;
+}
+
+.pkp_structure_content {
+	padding-top:0;
+}
+
+html .pkp_structure_sidebar {
+	background-color: transparent;
+}
+
+.pkp_navigation_primary_wrapper {
+    height: 2.5rem;
+    display:flex;
+}
+
+.pkp_head_wrapper .pkp_search {
+    position: static;
+    left:0;
+    display:flex;
+ 	flex-flow:row nowrap;
+ 	flex-grow:1;
+ 	margin-left: 1em;
+}
+
+
+/*.pkp_head_wrapper .pkp_search.is_open.is_open input[type="text"] {
+    border: 1px solid #ccc;
+    max-width: calc(94%);
+    border-top: none;
+}*/
+
+
+.pkp_head_wrapper .pkp_search.pkp_search input[type="text"],
+.pkp_head_wrapper .pkp_search .search_prompt.search_prompt {
+	 
+}
+
+.pkp_search input[type="text"],
+.search_cancel {
+	opacity:0;
+}
+
+.is_open input[type="text"],
+.is_open .search_cancel {
+	opacity: 1;
+}
+
+
+.pkp_head_wrapper .pkp_search.pkp_search input[type="text"],
+.pkp_head_wrapper .pkp_search.pkp_search.is_open input[type="text"]
+ {
+    position: static;
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: .125rem .25rem;
+    flex-grow:1;
+	
+}
+
+.pkp_head_wrapper .pkp_search .search_prompt.search_prompt {
+	height: calc(100% - .25rem);
+	transform: translate(0,.125rem);
+	border-radius: .25rem;
+}
+
+.pkp_head_wrapper .pkp_search.is_open {
+	min-width:auto;
+	background: transparent;
+}
+.pkp_head_wrapper .pkp_search.is_open .search_prompt {
+	border:none;
+}
+
+.pkp_head_wrapper .pkp_search.is_open input[type="text"] {
+	height: auto;
+	line-height:auto;
+}
