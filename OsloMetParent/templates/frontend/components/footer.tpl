@@ -31,13 +31,12 @@
 		<div class="columns">
 
 			{if $pageFooter}
-			<div class="column">
-				<div class="pkp_footer_content">
-					{$pageFooter}
-				</div>
-			</div><!-- column -->
+			<!--
+				If including footer content in settings > website > Page Footer
+				remember to add it using a div <class="column">...</div> wrapper for each column in the footer
+			 -->
+				{$pageFooter}
 			{/if}
-
 			<div class="column nb-NO-only">
 				<h4>Driftet av</h4>
 					<p>
