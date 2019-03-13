@@ -147,6 +147,13 @@
     .header_njar span {
         visibility:hidden;
     }
+}
+
+/*
+@media screen {
+    .header_njar span {
+        visibility:hidden;
+    }
     .pkp_site_name_wrapper {
         background-image: url(/plugins/themes/NJAR/svg/ar-logo-rgb-sort.svg);
         background-position: left center;
@@ -168,7 +175,7 @@
         background-position: left center, right center;
         background-repeat:no-repeat, no-repeat;
     }
-}
+}*/
 
 // logo placement, same as .pkp_structure_content
 .pkp_site_name_wrapper.pkp_site_name_wrapper.pkp_site_name_wrapper {
@@ -183,13 +190,21 @@
     background-color: cyan;
     display:block;
     height:100%;
-	position: relative;
-	width: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index: -1;
 	margin: 0 auto;
 	padding-left: @base;
     padding-right: @base;
     flex-shrink: 0;
     height: 100%;
+
+    background-image: url(/plugins/themes/NJAR/svg/ar-logo-rgb-sort.svg);
+        background-position: left center;
+        background-repeat:no-repeat;
 
 	@media( min-width: @screen-tablet ) {
 		width: @screen-tablet-container;
@@ -197,11 +212,17 @@
 	}
 
 	@media( min-width: @screen-desktop ) {
-		width: @screen-desktop-container;
+        width: @screen-desktop-container;
+        background-image: url(/plugins/themes/NJAR/svg/ar-logo-rgb-sort.svg), url(/plugins/themes/NJAR/svg/ar-tittelhode-grafisk-element1.svg);
+        background-position: left center, right -26em center;
+        background-repeat:no-repeat, no-repeat;
 	}
 
 	@media( min-width: @screen-lg-desktop ) {
-		width: @screen-lg-desktop-container;
+        width: @screen-lg-desktop-container;
+        background-image: url(/plugins/themes/NJAR/svg/ar-logo-rgb-sort.svg), url(/plugins/themes/NJAR/svg/ar-tittelhode-grafisk-element1.svg);
+        background-position: left center, right center;
+        background-repeat:no-repeat, no-repeat;
 	}
 }
 
