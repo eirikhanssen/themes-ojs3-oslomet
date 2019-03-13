@@ -3,7 +3,7 @@
 <style>
 /* <![CDATA[ */
     .shape {
-        fill: red;
+        fill: #ccc;
     }
 /* ]]> */
 </style>
