@@ -26,11 +26,8 @@
                 background-repeat: repeat-x;
                 */
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+74,dddfe3+88,dddfe3+88,f5f6f6+100 */
-background: #f5f6f6; /* Old browsers */
-background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 74%, #dddfe3 88%, #dddfe3 88%, #f5f6f6 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #f5f6f6 0%,#dbdce2 21%,#b8bac6 74%,#dddfe3 88%,#dddfe3 88%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 74%,#dddfe3 88%,#dddfe3 88%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+
+        background: white;
 		.pkp_site_name_wrapper {
             
             color: @head-color;
@@ -97,19 +94,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', end
                     }*/
 
                     &:hover, &:focus {
-                        /*text-shadow:1px 1px 0px black, 0 0 5px rgba(255, 249, 169, 0.678), 0 0 30px rgba(247, 255, 177, 0.3);*/
+
                     }
                 }
 			}
 		}
-	}
-    .pkp_navigation_primary_row {
-        
+    }
+    .pkp_navigation_primary_row.pkp_navigation_primary_row {
+        border-top: 2px solid @primary-nav-color;
+        background: @primary-nav-bg-color;
         background-color: @primary-nav-bg-color;
     }
     .pkp_navigation_primary > li > a {
         color: @primary-nav-color;
         text-shadow: @primary-nav-text-shadow;
+    }
+
+    .pkp_navigation_primary > li > a:hover {
+
+    }
+    .pkp_navigation_primary > li > a:focus {
+        outline: 5px solid orangered;
     }
 
     .pkp_head_wrapper .pkp_search .search_prompt {
@@ -123,16 +128,84 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', end
     }
 }
 
-.header_njar {
-    display: flex;
-    flex-flow: column wrap;
-    line-height:1.2em;
-}
-.header_njof {
-    font-weight: normal;
-    font-size: .75em;
+.pkp_head_wrapper .pkp_search.is_open.is_open input[type="text"] {
+    border: 1px solid #ccc;
+    max-width: calc(100% - 6em);
+    border-top: none;
 }
 
-.header_anr {
-    text-transform: uppercase;
+.pkp_structure_head .pkp_head_wrapper .pkp_search .search_prompt {
+    color: white;
+    background:black;
+    border-radius:1px;
 }
+.pkp_structure_head .pkp_head_wrapper .pkp_search.is_open .search_prompt {
+    color: #fffb91;
+}
+
+@media screen {
+    .header_njar span {
+        visibility:hidden;
+    }
+}
+
+// logo placement, same as .pkp_structure_content
+.pkp_site_name_wrapper.pkp_site_name_wrapper.pkp_site_name_wrapper {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+}
+.pkp_site_name_wrapper::before {
+    .pkp_helpers_clear;
+    content:"";
+    color: black;
+    display:block;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index: -1;
+	margin: 0 auto;
+	padding-left: @base;
+    padding-right: @base;
+    flex-shrink: 0;
+    height: 100%;
+
+    background-image: url(/plugins/themes/NJAR/svg/ar-logo-sort-10px-padding.svg);
+        background-position: left 1rem center;
+        background-repeat:no-repeat;
+
+	@media( min-width: @screen-tablet ) {
+		width: @screen-tablet-container;
+        padding: 0;
+        background-image: url(/plugins/themes/NJAR/svg/ar-logo-sort-10px-padding.svg), url(/plugins/themes/NJAR/svg/ar-tittelhode-grafisk-element1.svg);
+        background-position: left center, right -20rem center;
+        background-size: auto 100%;
+        background-repeat:no-repeat, no-repeat;
+	}
+
+	@media( min-width: @screen-desktop ) {
+        width: @screen-desktop-container;
+        background-image: url(/plugins/themes/NJAR/svg/ar-logo-sort-10px-padding.svg), url(/plugins/themes/NJAR/svg/ar-tittelhode-grafisk-element1.svg);
+        background-position: left center, right -6rem center;
+        background-size: auto 100%;
+        background-repeat:no-repeat, no-repeat;
+	}
+
+	@media( min-width: @screen-lg-desktop ) {
+        width: @screen-lg-desktop-container;
+        background-image: url(/plugins/themes/NJAR/svg/ar-logo-sort-10px-padding.svg), url(/plugins/themes/NJAR/svg/ar-tittelhode-grafisk-element1.svg);
+        background-position: left center, right center;
+        background-size: auto 100%;
+        background-repeat:no-repeat, no-repeat;
+	}
+}
+
+
+
+
+
+
+
