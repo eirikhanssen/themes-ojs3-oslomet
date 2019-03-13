@@ -4,7 +4,6 @@
 /* <![CDATA[ */
     .shape {
         fill: red;
-        fill: currentColor;
     }
 /* ]]> */
 </style>
