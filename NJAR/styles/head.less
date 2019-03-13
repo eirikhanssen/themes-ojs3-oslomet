@@ -171,8 +171,10 @@
 }
 
 // logo placement, same as .pkp_structure_content
-.pkp_site_name_wrapper {
+.pkp_site_name_wrapper.pkp_site_name_wrapper.pkp_site_name_wrapper {
     position: relative;
+    display: flex;
+    flex-flow: column wrap;
 }
 .pkp_site_name_wrapper::before {
     .pkp_helpers_clear;
@@ -185,7 +187,9 @@
 	width: 100%;
 	margin: 0 auto;
 	padding-left: @base;
-	padding-right: @base;
+    padding-right: @base;
+    flex-shrink: 0;
+    height: 100%;
 
 	@media( min-width: @screen-tablet ) {
 		width: @screen-tablet-container;
