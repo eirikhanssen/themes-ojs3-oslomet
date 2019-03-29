@@ -25,6 +25,8 @@
                 background-position: center center, center center;
                 background-size: auto 100%, auto 100%;
                 background-repeat: no-repeat, repeat-x;
+
+                .pkp_site_name .is_text {font-size: 0;}
             }
             
             // if this element is position:relative,
@@ -32,7 +34,7 @@
             // if not, then background will fit height of parent element (larger)
             // position: relative;
             
-            .is_text {font-size: 0;}
+            
             
             &::before,
             &::after {
@@ -46,17 +48,6 @@
                 font-family: Corbel, Arial, sans-serif;
                 font-weight: bold;
                 font-size: 3rem;
-                
-                .headertext {
-                    display: block;
-                    width: 100%;
-                    @media screen and (min-width: @screen-tablet){
-                        position: relative;
-                        left: -9999px;
-                    }
-                }
-
-                
 
 				& > a {
                     color: @head-color;
