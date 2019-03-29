@@ -17,6 +17,8 @@
 	{if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
 		{assign var="showingLogo" value=false}
 	{/if}
+	{* Use a custom html fragmet for the title *}
+	{assign var="displayPageHeaderTitle" value='<div class="title_rerm"><span class="intial">R</span><span class="remainder">econceptualizing</span> <span class="initial">E</span><span class="remainder">ducational</span> <span class="initial">R</span><span class="remainder">esearch</span> <span class="initial">M</span><span class="remainder">ethodology</span></div>'}
 {/strip}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
