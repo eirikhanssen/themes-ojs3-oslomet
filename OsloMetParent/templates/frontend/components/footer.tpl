@@ -39,12 +39,12 @@
 			{/if}
 
 			<div class="column">
-				<h4><span lang="en_US" class="en-US-only">Hosted by</span><span lang="nb_NO" class="nb-NO-only">Driftet av</span></h4>
+				<h4><span lang="en" class="en-US-only">Hosted by</span><span lang="nb" class="nb-NO-only">Driftet av</span></h4>
 				<div class="column inst-branding oslomet">
 					<p><a class="logotext" href="https://oslomet.no/ub" target="_blank" rel="noopener"> <img class="logo" src="/plugins/themes/OsloMetParent/svg/OsloMet-logo-black.svg" alt=""><span class="en-US-only logotext">OsloMet University Library</span><span class="nb-NO-only">Universitetsbiblioteket OsloMet</span></a></p>
 					<div class="info">
-						<p lang="nb_NO" class="nb-NO-only"><a href="https://journals.hioa.no/help/cookies-no_NO.html">Om informasjonskapsler på journals.hioa.no</a></p>
-						<p lang="en_US" class="en-US-only"><a href="https://journals.hioa.no/help/cookies-en_US.html">About cookies at journals.hioa.no</a></p>
+						<p lang="nb" class="nb-NO-only"><a href="https://journals.hioa.no/help/cookies-no_NO.html">Om informasjonskapsler på journals.hioa.no</a></p>
+						<p lang="en" class="en-US-only"><a href="https://journals.hioa.no/help/cookies-en_US.html">About cookies at journals.hioa.no</a></p>
 					</div><!-- .info -->
 				</div><!-- .column.inst-branding -->
 			</div>
