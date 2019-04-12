@@ -37,26 +37,17 @@
 			 -->
 				{$pageFooter}
 			{/if}
-			<div class="column nb-NO-only">
-				<h4>Driftet av</h4>
-					<p>
-						<a class="oslometlogo" href="https://oslomet.no/ub">
-							<strong>Universitetsbiblioteket&nbsp;OsloMet</strong>
-						</a>
-					</p>
-					<p><a href="https://journals.hioa.no/help/cookies-no_NO.html">Om informasjonskapsler på journals.hioa.no</a></p>
-			</div><!-- column -->
 
-			<div class="column en-US-only">
-				<h4>Hosted by</h4>
-					<p>
-						<a class="oslometlogo" href="https://oslomet.no/ub">
-							<strong>OsloMet&nbsp;University Library</strong>
-						</a>
-					</p>
-					<p><a href="https://journals.hioa.no/help/cookies-en_US.html">About cookies at journals.hioa.no</a></p>
-			</div><!-- column -->
-
+			<div class="column">
+				<h4><span lang="en_US" class="en-US-only">Hosted by</span><span lang="nb_NO" class="nb-NO-only">Driftet av</span></h4>
+				<div class="column inst-branding oslomet">
+					<p><a class="logotext" href="https://oslomet.no/ub" target="_blank" rel="noopener"> <img class="logo" src="/plugins/themes/OsloMetParent/svg/OsloMet-logo-black.svg" alt=""><span class="en-US-only logotext">OsloMet University Library</span><span class="nb-NO-only">Universitetsbiblioteket OsloMet</span></a></p>
+					<div class="info">
+						<p lang="nb_NO" class="nb-NO-only"><a href="https://journals.hioa.no/help/cookies-no_NO.html">Om informasjonskapsler på journals.hioa.no</a></p>
+						<p lang="en_US" class="en-US-only"><a href="https://journals.hioa.no/help/cookies-en_US.html">About cookies at journals.hioa.no</a></p>
+					</div><!-- .info -->
+				</div><!-- .column.inst-branding -->
+			</div>
 		</div><!-- columns -->
 
 	</footer>
