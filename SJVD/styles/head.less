@@ -83,3 +83,83 @@
         border-color: @primary-nav-color;
     }
 }
+
+/* wip */
+
+.pkp_structure_head .pkp_navigation_primary_row,
+.pkp_structure_footer_wrapper {
+    /*background-color: #f0e2ca;*/
+    background-color: #d6f7ff;
+    border-color: gray;
+    border-width: 1px;
+}
+
+footer a {
+	color: #073a84;
+}
+
+footer a:hover {
+	color: #073a84;
+	text-decoration:underline;
+}
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper {
+    background-color: #000;
+    color: #000;
+    background-image: url(/plugins/themes/SJVD/img/sjvd_top_autora_borealis_1000x150.jpg);
+    background-position: left 0em center;
+    background-size: auto 100%;
+    background-repeat:no-repeat;
+    min-height: 8rem;
+
+}
+		.pkp_head_wrapper .logo {
+			color: #27a4c4;
+			position:absolute;
+			height:4rem;
+			width: 7rem;
+			bottom:0;
+			
+			margin:auto;
+
+			left:1rem;
+			
+			padding:0;
+			
+		}
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a {
+    color: aliceblue;
+    display: flex;
+    text-shadow: 2px 2px 2px black;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+   
+    z-index: 1;
+    font-size: 1.7rem;
+    line-height: 1.1em;
+    text-align: left;
+   
+    padding:0;
+    padding-right: 2rem;
+    padding-left: 9.5rem;
+    
+    margin:0;
+
+}
+
+@media screen and (min-width: 60em) {
+	.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a {
+		
+		padding-left: 50%;
+	}
+}
+
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a:hover, 
+.pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a:focus {
+    text-shadow:none;
+
+}
