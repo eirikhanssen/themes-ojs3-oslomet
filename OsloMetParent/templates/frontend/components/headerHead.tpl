@@ -20,4 +20,5 @@
 
 	{load_header context="frontend"}
 	{load_stylesheet context="frontend"}
+	<script src="/plugins/themes/OsloMetParent/js/svgxuse.min.js"></script>
 </head>
