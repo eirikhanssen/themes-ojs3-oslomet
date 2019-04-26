@@ -44,6 +44,7 @@
 					{else}
 						<div class="pkp_site_name">
 					{/if}
+						<svg class="logo"><use xlink:href="/plugins/themes/OsloMetParent/svg/symbols.svg#sjvd"></use></svg>
 						{url|assign:"homeUrl" page="index" router=$smarty.const.ROUTE_PAGE}
 							<a href="{$homeUrl}" class="is_text">{$displayPageHeaderTitle}</a>
 					{if $requestedOp == 'index'}

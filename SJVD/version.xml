@@ -13,8 +13,8 @@
 <version>
 	<application>SJVD</application>
 	<type>plugins.themes</type>
-	<release>3.1.0.3</release>
-	<date>2019-01-10</date>
+	<release>3.1.2.4</release>
+	<date>2019-04-26</date>
 	<lazy-load>0</lazy-load>
 	<class>SJVDThemePlugin</class>
 </version>
