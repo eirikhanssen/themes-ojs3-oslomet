@@ -89,9 +89,18 @@
 .pkp_structure_head .pkp_navigation_primary_row,
 .pkp_structure_footer_wrapper {
     /*background-color: #f0e2ca;*/
-    background-color: #d6f7ff;
+    /*background-color: #d6f7ff;*/
     border-color: gray;
     border-width: 1px;
+}
+
+.pkp_structure_head .pkp_navigation_primary_row,
+.pkp_structure_footer_wrapper {
+    background-color: @theme-color;
+}
+
+svg.logo, .pkp_site_name_wrapper .pkp_site_name > a {
+    color: @theme-color;
 }
 
 footer a {
@@ -113,23 +122,23 @@ footer a:hover {
     min-height: 8rem;
 
 }
-		.pkp_head_wrapper .logo {
-			color: #27a4c4;
-			position:absolute;
-			height:4rem;
-			width: 7rem;
-			bottom:0;
-			
-			margin:auto;
+.pkp_head_wrapper .logo {
+    color: #27a4c4;
+    position:absolute;
+    height:4rem;
+    width: 7rem;
+    bottom:0;
+    
+    margin:auto;
 
-			left:1rem;
-			
-			padding:0;
-			
-		}
+    left:1rem;
+    
+    padding:0;
+    
+}
 
 .pkp_structure_head .pkp_head_wrapper .pkp_site_name_wrapper .pkp_site_name > a {
-    color: aliceblue;
+    /*color: aliceblue;*/
     display: flex;
     text-shadow: 2px 2px 2px black;
     flex-flow: row nowrap;
