@@ -17,8 +17,7 @@
 			| {$currentContext->getLocalizedName()}
 		{/if}
 	</title>
-
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora">
 	{load_header context="frontend"}
 	{load_stylesheet context="frontend"}
-	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
