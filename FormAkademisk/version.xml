@@ -13,7 +13,7 @@
 <version>
 	<application>FormAkademisk</application>
 	<type>plugins.themes</type>
-	<release>3.1.0.28</release>
+	<release>3.1.0.29</release>
 	<date>2018-05-20</date>
 	<lazy-load>0</lazy-load>
 	<class>FormAkademiskThemePlugin</class>
