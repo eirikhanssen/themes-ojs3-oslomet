@@ -28,6 +28,7 @@
 <div id="pkp_content_footer" class="pkp_structure_footer_wrapper" role="contentinfo">
 
 	<footer class="pkp_structure_footer">
+	<p class="issn">ISSN: {$currentJournal->getSetting('onlineIssn')}</p>
 		<div class="columns">
 
 			{if $pageFooter}
