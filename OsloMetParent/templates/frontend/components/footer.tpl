@@ -11,6 +11,17 @@
  *       represents a page-level override, and doesn't indicate whether or not
  *       sidebars have been configured for thesite.
  *}
+{strip}
+       	{if $currentJournal && $currentJournal->getSetting('onlineIssn')}
+                {assign var=onlineIssn value=$currentJournal->getSetting('onlineIssn')}
+                {assign var=footerIssnPrefix value='ISSN: '}
+                {assign var=footerISSN value="`$footerIssnPrefix``$onlineIssn`"}
+        {elseif $currentJournal && $currentJournal->getSetting('printIssn')}
+                {assign var=printIssn value=$currentJournal->getSetting('printIssn')}
+                {assign var=footerIssnPrefix value='ISSN (print): '}
+                {assign var=footerISSN value="`$footerIssnPrefix``$printIssn`"}
+        {/if}
+{/strip}
 
 	</div><!-- pkp_structure_main -->
 
@@ -28,7 +39,7 @@
 <div id="pkp_content_footer" class="pkp_structure_footer_wrapper" role="contentinfo">
 
 	<footer class="pkp_structure_footer">
-	<p class="issn">ISSN: {$currentJournal->getSetting('onlineIssn')}</p>
+	{if $footerISSN}<p class="issn foobar">{$footerISSN}</p>{/if}
 		<div class="columns">
 
 			{if $pageFooter}
