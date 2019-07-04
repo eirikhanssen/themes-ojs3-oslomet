@@ -13,8 +13,8 @@
 <version>
 	<application>Human</application>
 	<type>plugins.themes</type>
-	<release>3.1.0.36</release>
-	<date>2019-04-12</date>
+	<release>3.1.2.1</release>
+	<date>2019-07-04</date>
 	<lazy-load>0</lazy-load>
 	<class>HumanThemePlugin</class>
 </version>

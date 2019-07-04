@@ -1,5 +1,5 @@
 {**
- * lib/pkp/templates/frontend/components/header.tpl
+ * lib/pkp/templates/frontend/components/header.tpl ==> plugins/themes/SJVD/templates/frontend/components/header.tpl
  *
  * Copyright (c) 2014-2019 Simon Fraser University
  * Copyright (c) 2003-2019 John Willinsky
@@ -17,12 +17,13 @@
 	{if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
 		{assign var="showingLogo" value=false}
 	{/if}
+	{assign var="logo" value='<svg class="logo"><use xlink:href="/plugins/themes/OsloMetParent/svg/symbols.svg#sjvd"></use></svg>'}
 {/strip}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 {if !$pageTitleTranslated}{capture assign="pageTitleTranslated"}{translate key=$pageTitle}{/capture}{/if}
 {include file="frontend/components/headerHead.tpl"}
-<body class="pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if}" dir="{$currentLocaleLangDir|escape|default:"ltr"}">
+<body id="sjvd" class="pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if}" dir="{$currentLocaleLangDir|escape|default:"ltr"}">
 
 	<div class="cmp_skip_to_content">
 		<a href="#pkp_content_main">{translate key="navigation.skip.main"}</a>
@@ -50,11 +51,13 @@
 								{url context="index" router=$smarty.const.ROUTE_PAGE}
 							{/if}
 						{/capture}
+						{$logo}
 						{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
 							<a href="{$homeUrl}" class="is_img">
 								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
 							</a>
 						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
+							
 							<a href="{$homeUrl}" class="is_text">{$displayPageHeaderTitle}</a>
 						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_array($displayPageHeaderTitle)}
 							<a href="{$homeUrl}" class="is_img">
