@@ -1,5 +1,5 @@
 {**
- * lib/pkp/templates/frontend/components/header.tpl
+ * lib/pkp/templates/frontend/components/header.tpl ==> plugins/themes/Seminar/templates/frontend/components/header.tpl
  *
  * Copyright (c) 2014-2019 Simon Fraser University
  * Copyright (c) 2003-2019 John Willinsky
@@ -17,6 +17,7 @@
 	{if $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
 		{assign var="showingLogo" value=false}
 	{/if}
+	{assign var="titleHTML" value='<div class="headertext">Seminar.net</div>'}
 {/strip}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
@@ -50,7 +51,7 @@
 								{url context="index" router=$smarty.const.ROUTE_PAGE}
 							{/if}
 						{/capture}
-						<a href="{$homeUrl}" class="is_text"><div class="headertext">Seminar.net</div></a>
+							<a href="{$homeUrl}" class="is_text">{$titleHTML}</a>
 					{if $requestedOp == 'index'}
 						</h1>
 					{else}
