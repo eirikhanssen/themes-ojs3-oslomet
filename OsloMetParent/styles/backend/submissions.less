@@ -8,18 +8,13 @@
     margin-bottom:3em;
 }
 
-.pkpListPanel__actions {
+.pkpListPanel__actions a.pkpButton[href*=submission] {
     position:absolute;
     top: ~"calc(100% + 3em)";
-}
-
-.pkpListPanel__actions::after {
     display:block;
-    position:absolute;
-    
 }
 
-.pkpListPanel__actions::before {
+.pkpListPanel__actions a.pkpButton[href*=submission]::before {
     content: "Hvis ny innlevering. Skal ikke brukes til å laste opp revisjoner av aktive innleveringer.";
     display:block;
     position:absolute;
