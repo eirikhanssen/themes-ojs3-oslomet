@@ -12,6 +12,7 @@
     position:absolute;
     top: ~"calc(100% + 3em)";
     display:block;
+    left:0;
 }
 
 .pkpListPanel__actions a.pkpButton[href*=submission]::before {
@@ -25,6 +26,10 @@
     padding: .25em .5em;
     background-color: lightyellow;
     line-height:1.5em;
+    pointer-events: none;
+    font-weight: normal;
+    color: black;
+    font-size: 1.2em;
 }
 
 [lang="en-US"] .pkpListPanel__actions::before {
