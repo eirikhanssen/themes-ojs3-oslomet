@@ -31,8 +31,9 @@ class HumanThemePlugin extends ThemePlugin {
         // `child-stylesheet`. This ensures that it
         // won't clash with the parent's stylesheet.
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
-        $this->addStyle('my-custom-style', 'styles/backend.less', array( 'contexts' => 'backend'));
-		//$this->modifyStyle('pkpLib', array('addLess' => array('styles/backend.less')));
+		$this->addStyle('oslomet-custom-backend-styles', '../OsloMetParent/styles/backend.less', array( 'contexts' => 'backend' ));
+		$this->addStyle('hrer-custom-backend-styles', 'styles/backend.less', array( 'contexts' => 'backend'));
+		
 	}
 	
 	/**
